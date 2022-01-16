@@ -1,0 +1,24 @@
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\University Management System 2.exe.config
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\University Management System 2.exe
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\University Management System 2.pdb
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Properties.Resources.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.exe.licenses
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.csproj.CopyComplete
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.exe
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.pdb
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Department.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Home.resources
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Guna.UI2.dll
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Student.resources
