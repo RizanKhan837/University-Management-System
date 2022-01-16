@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace University_Management_System_2
 {
@@ -15,6 +16,28 @@ namespace University_Management_System_2
         public Department()
         {
             InitializeComponent();
+        }
+        SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive\University Management System 2\UniversityDataBase.mdf;Integrated Security=True");
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            if (DeptNameTb.Text == "" || DeptIntakeTb.Text == "" || DeptFeesTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    Connection.Open();
+
+                    Connection.Close();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }

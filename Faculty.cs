@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace University_Management_System_2
 {
-    public partial class Faculty : Form
+    public partial class F_NameTb : Form
     {
-        public Faculty()
+        public F_NameTb()
         {
             InitializeComponent();
         }

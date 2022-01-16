@@ -34,13 +34,13 @@ namespace University_Management_System_2
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DeleteButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.EditButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.SaveButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Dir_RankTb = new System.Windows.Forms.TextBox();
+            this.Camp_DirTb = new System.Windows.Forms.TextBox();
+            this.Camp_NameTb = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -69,10 +69,10 @@ namespace University_Management_System_2
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.Camp_DateDt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Camp_CityTb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -86,80 +86,80 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // DeleteButton
+            // DeleteBtn
             // 
-            this.DeleteButton.ActiveBorderThickness = 1;
-            this.DeleteButton.ActiveCornerRadius = 20;
-            this.DeleteButton.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.ActiveForecolor = System.Drawing.Color.White;
-            this.DeleteButton.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.BackColor = System.Drawing.Color.White;
-            this.DeleteButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteButton.BackgroundImage")));
-            this.DeleteButton.ButtonText = "Delete";
-            this.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DeleteButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.ForeColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.IdleBorderThickness = 1;
-            this.DeleteButton.IdleCornerRadius = 20;
-            this.DeleteButton.IdleFillColor = System.Drawing.Color.White;
-            this.DeleteButton.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.Location = new System.Drawing.Point(744, 209);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(5);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(129, 40);
-            this.DeleteButton.TabIndex = 73;
-            this.DeleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.ActiveBorderThickness = 1;
+            this.DeleteBtn.ActiveCornerRadius = 20;
+            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.BackColor = System.Drawing.Color.White;
+            this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
+            this.DeleteBtn.ButtonText = "Delete";
+            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.IdleBorderThickness = 1;
+            this.DeleteBtn.IdleCornerRadius = 20;
+            this.DeleteBtn.IdleFillColor = System.Drawing.Color.White;
+            this.DeleteBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.Location = new System.Drawing.Point(744, 209);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
+            this.DeleteBtn.TabIndex = 73;
+            this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EditButton
+            // EditBtn
             // 
-            this.EditButton.ActiveBorderThickness = 1;
-            this.EditButton.ActiveCornerRadius = 20;
-            this.EditButton.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.EditButton.ActiveForecolor = System.Drawing.Color.White;
-            this.EditButton.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.EditButton.BackColor = System.Drawing.Color.White;
-            this.EditButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditButton.BackgroundImage")));
-            this.EditButton.ButtonText = "Edit";
-            this.EditButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EditButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditButton.ForeColor = System.Drawing.Color.DeepPink;
-            this.EditButton.IdleBorderThickness = 1;
-            this.EditButton.IdleCornerRadius = 20;
-            this.EditButton.IdleFillColor = System.Drawing.Color.White;
-            this.EditButton.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.EditButton.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.EditButton.Location = new System.Drawing.Point(570, 209);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(5);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(129, 40);
-            this.EditButton.TabIndex = 72;
-            this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.ActiveBorderThickness = 1;
+            this.EditBtn.ActiveCornerRadius = 20;
+            this.EditBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.EditBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.BackColor = System.Drawing.Color.White;
+            this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
+            this.EditBtn.ButtonText = "Edit";
+            this.EditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.IdleBorderThickness = 1;
+            this.EditBtn.IdleCornerRadius = 20;
+            this.EditBtn.IdleFillColor = System.Drawing.Color.White;
+            this.EditBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.EditBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.Location = new System.Drawing.Point(570, 209);
+            this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(129, 40);
+            this.EditBtn.TabIndex = 72;
+            this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SaveButton
+            // SaveBtn
             // 
-            this.SaveButton.ActiveBorderThickness = 1;
-            this.SaveButton.ActiveCornerRadius = 20;
-            this.SaveButton.ActiveFillColor = System.Drawing.Color.HotPink;
-            this.SaveButton.ActiveForecolor = System.Drawing.Color.White;
-            this.SaveButton.ActiveLineColor = System.Drawing.Color.HotPink;
-            this.SaveButton.BackColor = System.Drawing.Color.White;
-            this.SaveButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveButton.BackgroundImage")));
-            this.SaveButton.ButtonText = "Save";
-            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.ForeColor = System.Drawing.Color.DeepPink;
-            this.SaveButton.IdleBorderThickness = 1;
-            this.SaveButton.IdleCornerRadius = 20;
-            this.SaveButton.IdleFillColor = System.Drawing.Color.White;
-            this.SaveButton.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.SaveButton.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.SaveButton.Location = new System.Drawing.Point(396, 209);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(5);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(129, 40);
-            this.SaveButton.TabIndex = 71;
-            this.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveBtn.ActiveBorderThickness = 1;
+            this.SaveBtn.ActiveCornerRadius = 20;
+            this.SaveBtn.ActiveFillColor = System.Drawing.Color.HotPink;
+            this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.SaveBtn.ActiveLineColor = System.Drawing.Color.HotPink;
+            this.SaveBtn.BackColor = System.Drawing.Color.White;
+            this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
+            this.SaveBtn.ButtonText = "Save";
+            this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.IdleBorderThickness = 1;
+            this.SaveBtn.IdleCornerRadius = 20;
+            this.SaveBtn.IdleFillColor = System.Drawing.Color.White;
+            this.SaveBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.Location = new System.Drawing.Point(396, 209);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(129, 40);
+            this.SaveBtn.TabIndex = 71;
+            this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2DataGridView1
             // 
@@ -218,29 +218,29 @@ namespace University_Management_System_2
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // textBox3
+            // Dir_RankTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(905, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 27);
-            this.textBox3.TabIndex = 68;
+            this.Dir_RankTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dir_RankTb.Location = new System.Drawing.Point(905, 151);
+            this.Dir_RankTb.Name = "Dir_RankTb";
+            this.Dir_RankTb.Size = new System.Drawing.Size(133, 27);
+            this.Dir_RankTb.TabIndex = 68;
             // 
-            // textBox2
+            // Camp_DirTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(546, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 27);
-            this.textBox2.TabIndex = 67;
+            this.Camp_DirTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camp_DirTb.Location = new System.Drawing.Point(546, 151);
+            this.Camp_DirTb.Name = "Camp_DirTb";
+            this.Camp_DirTb.Size = new System.Drawing.Size(154, 27);
+            this.Camp_DirTb.TabIndex = 67;
             // 
-            // textBox1
+            // Camp_NameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(257, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 27);
-            this.textBox1.TabIndex = 66;
+            this.Camp_NameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camp_NameTb.Location = new System.Drawing.Point(257, 151);
+            this.Camp_NameTb.Name = "Camp_NameTb";
+            this.Camp_NameTb.Size = new System.Drawing.Size(154, 27);
+            this.Camp_NameTb.TabIndex = 66;
             // 
             // panel2
             // 
@@ -355,9 +355,9 @@ namespace University_Management_System_2
             this.label12.ForeColor = System.Drawing.Color.DeepPink;
             this.label12.Location = new System.Drawing.Point(901, 127);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 21);
+            this.label12.Size = new System.Drawing.Size(126, 21);
             this.label12.TabIndex = 58;
-            this.label12.Text = "Rank";
+            this.label12.Text = "Director Rank";
             // 
             // label11
             // 
@@ -524,21 +524,21 @@ namespace University_Management_System_2
             this.panel1.Size = new System.Drawing.Size(7, 657);
             this.panel1.TabIndex = 38;
             // 
-            // guna2DateTimePicker1
+            // Camp_DateDt
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.DeepPink;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(715, 151);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(177, 27);
-            this.guna2DateTimePicker1.TabIndex = 121;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 1, 9, 19, 31, 52, 936);
-            this.guna2DateTimePicker1.Visible = false;
+            this.Camp_DateDt.CheckedState.Parent = this.Camp_DateDt;
+            this.Camp_DateDt.FillColor = System.Drawing.Color.DeepPink;
+            this.Camp_DateDt.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Camp_DateDt.HoverState.Parent = this.Camp_DateDt;
+            this.Camp_DateDt.Location = new System.Drawing.Point(715, 151);
+            this.Camp_DateDt.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Camp_DateDt.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Camp_DateDt.Name = "Camp_DateDt";
+            this.Camp_DateDt.ShadowDecoration.Parent = this.Camp_DateDt;
+            this.Camp_DateDt.Size = new System.Drawing.Size(177, 27);
+            this.Camp_DateDt.TabIndex = 121;
+            this.Camp_DateDt.Value = new System.DateTime(2022, 1, 9, 19, 31, 52, 936);
+            this.Camp_DateDt.Visible = false;
             // 
             // label14
             // 
@@ -562,13 +562,13 @@ namespace University_Management_System_2
             this.label15.TabIndex = 57;
             this.label15.Text = "City";
             // 
-            // textBox5
+            // Camp_CityTb
             // 
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(423, 151);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(113, 27);
-            this.textBox5.TabIndex = 69;
+            this.Camp_CityTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camp_CityTb.Location = new System.Drawing.Point(423, 151);
+            this.Camp_CityTb.Name = "Camp_CityTb";
+            this.Camp_CityTb.Size = new System.Drawing.Size(113, 27);
+            this.Camp_CityTb.TabIndex = 69;
             // 
             // Campus
             // 
@@ -576,16 +576,16 @@ namespace University_Management_System_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.Camp_DateDt);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(this.EditButton);
-            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.EditBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Camp_CityTb);
+            this.Controls.Add(this.Dir_RankTb);
+            this.Controls.Add(this.Camp_DirTb);
+            this.Controls.Add(this.Camp_NameTb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.bunifuLabel2);
@@ -636,13 +636,13 @@ namespace University_Management_System_2
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuThinButton2 DeleteButton;
-        private Bunifu.Framework.UI.BunifuThinButton2 EditButton;
-        private Bunifu.Framework.UI.BunifuThinButton2 SaveButton;
+        private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Dir_RankTb;
+        private System.Windows.Forms.TextBox Camp_DirTb;
+        private System.Windows.Forms.TextBox Camp_NameTb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
@@ -671,9 +671,9 @@ namespace University_Management_System_2
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker Camp_DateDt;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Camp_CityTb;
         private System.Windows.Forms.Label label15;
     }
 }

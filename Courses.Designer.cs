@@ -34,15 +34,15 @@ namespace University_Management_System_2
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DeleteButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.EditButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.SaveButton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.C_DeptIdCb = new System.Windows.Forms.ComboBox();
+            this.C_FacultyIdTb = new System.Windows.Forms.TextBox();
+            this.C_FNameTb = new System.Windows.Forms.TextBox();
+            this.CreditHrsTb = new System.Windows.Forms.TextBox();
+            this.CNameTb = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -74,7 +74,7 @@ namespace University_Management_System_2
             this.panel1 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.C_DeptNameTb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -88,80 +88,80 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // DeleteButton
+            // DeleteBtn
             // 
-            this.DeleteButton.ActiveBorderThickness = 1;
-            this.DeleteButton.ActiveCornerRadius = 20;
-            this.DeleteButton.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.ActiveForecolor = System.Drawing.Color.White;
-            this.DeleteButton.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.BackColor = System.Drawing.Color.White;
-            this.DeleteButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteButton.BackgroundImage")));
-            this.DeleteButton.ButtonText = "Delete";
-            this.DeleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DeleteButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.ForeColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.IdleBorderThickness = 1;
-            this.DeleteButton.IdleCornerRadius = 20;
-            this.DeleteButton.IdleFillColor = System.Drawing.Color.White;
-            this.DeleteButton.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.DeleteButton.Location = new System.Drawing.Point(782, 202);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(5);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(129, 40);
-            this.DeleteButton.TabIndex = 73;
-            this.DeleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.ActiveBorderThickness = 1;
+            this.DeleteBtn.ActiveCornerRadius = 20;
+            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.BackColor = System.Drawing.Color.White;
+            this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
+            this.DeleteBtn.ButtonText = "Delete";
+            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.IdleBorderThickness = 1;
+            this.DeleteBtn.IdleCornerRadius = 20;
+            this.DeleteBtn.IdleFillColor = System.Drawing.Color.White;
+            this.DeleteBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.Location = new System.Drawing.Point(782, 202);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
+            this.DeleteBtn.TabIndex = 73;
+            this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EditButton
+            // EditBtn
             // 
-            this.EditButton.ActiveBorderThickness = 1;
-            this.EditButton.ActiveCornerRadius = 20;
-            this.EditButton.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.EditButton.ActiveForecolor = System.Drawing.Color.White;
-            this.EditButton.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.EditButton.BackColor = System.Drawing.Color.White;
-            this.EditButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditButton.BackgroundImage")));
-            this.EditButton.ButtonText = "Edit";
-            this.EditButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EditButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditButton.ForeColor = System.Drawing.Color.DeepPink;
-            this.EditButton.IdleBorderThickness = 1;
-            this.EditButton.IdleCornerRadius = 20;
-            this.EditButton.IdleFillColor = System.Drawing.Color.White;
-            this.EditButton.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.EditButton.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.EditButton.Location = new System.Drawing.Point(575, 202);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(5);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(129, 40);
-            this.EditButton.TabIndex = 72;
-            this.EditButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.ActiveBorderThickness = 1;
+            this.EditBtn.ActiveCornerRadius = 20;
+            this.EditBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.EditBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.BackColor = System.Drawing.Color.White;
+            this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
+            this.EditBtn.ButtonText = "Edit";
+            this.EditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.IdleBorderThickness = 1;
+            this.EditBtn.IdleCornerRadius = 20;
+            this.EditBtn.IdleFillColor = System.Drawing.Color.White;
+            this.EditBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.EditBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.Location = new System.Drawing.Point(575, 202);
+            this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(129, 40);
+            this.EditBtn.TabIndex = 72;
+            this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SaveButton
+            // SaveBtn
             // 
-            this.SaveButton.ActiveBorderThickness = 1;
-            this.SaveButton.ActiveCornerRadius = 20;
-            this.SaveButton.ActiveFillColor = System.Drawing.Color.HotPink;
-            this.SaveButton.ActiveForecolor = System.Drawing.Color.White;
-            this.SaveButton.ActiveLineColor = System.Drawing.Color.HotPink;
-            this.SaveButton.BackColor = System.Drawing.Color.White;
-            this.SaveButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveButton.BackgroundImage")));
-            this.SaveButton.ButtonText = "Save";
-            this.SaveButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SaveButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.ForeColor = System.Drawing.Color.DeepPink;
-            this.SaveButton.IdleBorderThickness = 1;
-            this.SaveButton.IdleCornerRadius = 20;
-            this.SaveButton.IdleFillColor = System.Drawing.Color.White;
-            this.SaveButton.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.SaveButton.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.SaveButton.Location = new System.Drawing.Point(368, 202);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(5);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(129, 40);
-            this.SaveButton.TabIndex = 71;
-            this.SaveButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveBtn.ActiveBorderThickness = 1;
+            this.SaveBtn.ActiveCornerRadius = 20;
+            this.SaveBtn.ActiveFillColor = System.Drawing.Color.HotPink;
+            this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.SaveBtn.ActiveLineColor = System.Drawing.Color.HotPink;
+            this.SaveBtn.BackColor = System.Drawing.Color.White;
+            this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
+            this.SaveBtn.ButtonText = "Save";
+            this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.IdleBorderThickness = 1;
+            this.SaveBtn.IdleCornerRadius = 20;
+            this.SaveBtn.IdleFillColor = System.Drawing.Color.White;
+            this.SaveBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.Location = new System.Drawing.Point(368, 202);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(129, 40);
+            this.SaveBtn.TabIndex = 71;
+            this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2DataGridView1
             // 
@@ -220,46 +220,46 @@ namespace University_Management_System_2
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // comboBox1
+            // C_DeptIdCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(538, 151);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 27);
-            this.comboBox1.TabIndex = 70;
+            this.C_DeptIdCb.Font = new System.Drawing.Font("Calibri", 12F);
+            this.C_DeptIdCb.FormattingEnabled = true;
+            this.C_DeptIdCb.Location = new System.Drawing.Point(538, 151);
+            this.C_DeptIdCb.Name = "C_DeptIdCb";
+            this.C_DeptIdCb.Size = new System.Drawing.Size(89, 27);
+            this.C_DeptIdCb.TabIndex = 70;
             // 
-            // textBox4
+            // C_FacultyIdTb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(804, 151);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(101, 27);
-            this.textBox4.TabIndex = 69;
+            this.C_FacultyIdTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C_FacultyIdTb.Location = new System.Drawing.Point(804, 151);
+            this.C_FacultyIdTb.Name = "C_FacultyIdTb";
+            this.C_FacultyIdTb.Size = new System.Drawing.Size(101, 27);
+            this.C_FacultyIdTb.TabIndex = 69;
             // 
-            // textBox3
+            // C_FNameTb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(914, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(141, 27);
-            this.textBox3.TabIndex = 68;
+            this.C_FNameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C_FNameTb.Location = new System.Drawing.Point(914, 151);
+            this.C_FNameTb.Name = "C_FNameTb";
+            this.C_FNameTb.Size = new System.Drawing.Size(141, 27);
+            this.C_FNameTb.TabIndex = 68;
             // 
-            // textBox2
+            // CreditHrsTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(407, 151);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 27);
-            this.textBox2.TabIndex = 67;
+            this.CreditHrsTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreditHrsTb.Location = new System.Drawing.Point(407, 151);
+            this.CreditHrsTb.Name = "CreditHrsTb";
+            this.CreditHrsTb.Size = new System.Drawing.Size(122, 27);
+            this.CreditHrsTb.TabIndex = 67;
             // 
-            // textBox1
+            // CNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(244, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 27);
-            this.textBox1.TabIndex = 66;
+            this.CNameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CNameTb.Location = new System.Drawing.Point(244, 151);
+            this.CNameTb.Name = "CNameTb";
+            this.CNameTb.Size = new System.Drawing.Size(154, 27);
+            this.CNameTb.TabIndex = 66;
             // 
             // panel2
             // 
@@ -576,13 +576,13 @@ namespace University_Management_System_2
             this.label15.TabIndex = 57;
             this.label15.Text = "Department Name";
             // 
-            // textBox5
+            // C_DeptNameTb
             // 
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(636, 151);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 27);
-            this.textBox5.TabIndex = 69;
+            this.C_DeptNameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C_DeptNameTb.Location = new System.Drawing.Point(636, 151);
+            this.C_DeptNameTb.Name = "C_DeptNameTb";
+            this.C_DeptNameTb.Size = new System.Drawing.Size(159, 27);
+            this.C_DeptNameTb.TabIndex = 69;
             // 
             // Courses
             // 
@@ -590,16 +590,16 @@ namespace University_Management_System_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
-            this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(this.EditButton);
-            this.Controls.Add(this.SaveButton);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.EditBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.C_DeptIdCb);
+            this.Controls.Add(this.C_DeptNameTb);
+            this.Controls.Add(this.C_FacultyIdTb);
+            this.Controls.Add(this.C_FNameTb);
+            this.Controls.Add(this.CreditHrsTb);
+            this.Controls.Add(this.CNameTb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.bunifuLabel2);
@@ -652,15 +652,15 @@ namespace University_Management_System_2
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuThinButton2 DeleteButton;
-        private Bunifu.Framework.UI.BunifuThinButton2 EditButton;
-        private Bunifu.Framework.UI.BunifuThinButton2 SaveButton;
+        private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox C_DeptIdCb;
+        private System.Windows.Forms.TextBox C_FacultyIdTb;
+        private System.Windows.Forms.TextBox C_FNameTb;
+        private System.Windows.Forms.TextBox CreditHrsTb;
+        private System.Windows.Forms.TextBox CNameTb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
@@ -690,7 +690,7 @@ namespace University_Management_System_2
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox C_DeptNameTb;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
     }
