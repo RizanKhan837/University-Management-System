@@ -31,14 +31,12 @@ namespace University_Management_System_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ResetBtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.PayBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.AmountTb = new System.Windows.Forms.TextBox();
             this.StDeptTb = new System.Windows.Forms.TextBox();
             this.StNameTb = new System.Windows.Forms.TextBox();
@@ -60,8 +58,6 @@ namespace University_Management_System_2
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.StSemesterCb = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.StIdCb = new System.Windows.Forms.ComboBox();
             this.LogOut_Lbl = new System.Windows.Forms.Label();
@@ -73,7 +69,9 @@ namespace University_Management_System_2
             this.Dept_Lbl = new System.Windows.Forms.Label();
             this.Student_Lbl = new System.Windows.Forms.Label();
             this.Home_Lbl = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.FeeDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.SemLbl = new System.Windows.Forms.Label();
+            this.SemesterCb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -84,6 +82,7 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FeeDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -91,137 +90,57 @@ namespace University_Management_System_2
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // DeleteBtn
+            // ResetBtn
             // 
-            this.DeleteBtn.ActiveBorderThickness = 1;
-            this.DeleteBtn.ActiveCornerRadius = 20;
-            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.BackColor = System.Drawing.Color.White;
-            this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
-            this.DeleteBtn.ButtonText = "Delete";
-            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.ForeColor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.IdleBorderThickness = 1;
-            this.DeleteBtn.IdleCornerRadius = 20;
-            this.DeleteBtn.IdleFillColor = System.Drawing.Color.White;
-            this.DeleteBtn.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.Location = new System.Drawing.Point(744, 209);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
-            this.DeleteBtn.TabIndex = 156;
-            this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ResetBtn.ActiveBorderThickness = 1;
+            this.ResetBtn.ActiveCornerRadius = 20;
+            this.ResetBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.ResetBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.ResetBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.ResetBtn.BackColor = System.Drawing.Color.White;
+            this.ResetBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ResetBtn.BackgroundImage")));
+            this.ResetBtn.ButtonText = "Reset";
+            this.ResetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ResetBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.ResetBtn.IdleBorderThickness = 1;
+            this.ResetBtn.IdleCornerRadius = 20;
+            this.ResetBtn.IdleFillColor = System.Drawing.Color.White;
+            this.ResetBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.ResetBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.ResetBtn.Location = new System.Drawing.Point(687, 209);
+            this.ResetBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.ResetBtn.Name = "ResetBtn";
+            this.ResetBtn.Size = new System.Drawing.Size(129, 40);
+            this.ResetBtn.TabIndex = 156;
+            this.ResetBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
-            // EditBtn
+            // PayBtn
             // 
-            this.EditBtn.ActiveBorderThickness = 1;
-            this.EditBtn.ActiveCornerRadius = 20;
-            this.EditBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.EditBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.EditBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
-            this.EditBtn.BackColor = System.Drawing.Color.White;
-            this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
-            this.EditBtn.ButtonText = "Edit";
-            this.EditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditBtn.ForeColor = System.Drawing.Color.DeepPink;
-            this.EditBtn.IdleBorderThickness = 1;
-            this.EditBtn.IdleCornerRadius = 20;
-            this.EditBtn.IdleFillColor = System.Drawing.Color.White;
-            this.EditBtn.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.EditBtn.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.EditBtn.Location = new System.Drawing.Point(570, 209);
-            this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(129, 40);
-            this.EditBtn.TabIndex = 155;
-            this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SaveBtn
-            // 
-            this.SaveBtn.ActiveBorderThickness = 1;
-            this.SaveBtn.ActiveCornerRadius = 20;
-            this.SaveBtn.ActiveFillColor = System.Drawing.Color.HotPink;
-            this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.SaveBtn.ActiveLineColor = System.Drawing.Color.HotPink;
-            this.SaveBtn.BackColor = System.Drawing.Color.White;
-            this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
-            this.SaveBtn.ButtonText = "Save";
-            this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn.ForeColor = System.Drawing.Color.DeepPink;
-            this.SaveBtn.IdleBorderThickness = 1;
-            this.SaveBtn.IdleCornerRadius = 20;
-            this.SaveBtn.IdleFillColor = System.Drawing.Color.White;
-            this.SaveBtn.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.SaveBtn.IdleLineColor = System.Drawing.Color.DeepPink;
-            this.SaveBtn.Location = new System.Drawing.Point(396, 209);
-            this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(129, 40);
-            this.SaveBtn.TabIndex = 154;
-            this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(257, 297);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(781, 324);
-            this.guna2DataGridView1.TabIndex = 157;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PayBtn.ActiveBorderThickness = 1;
+            this.PayBtn.ActiveCornerRadius = 20;
+            this.PayBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.PayBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.PayBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.PayBtn.BackColor = System.Drawing.Color.White;
+            this.PayBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PayBtn.BackgroundImage")));
+            this.PayBtn.ButtonText = "Pay";
+            this.PayBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PayBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PayBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.PayBtn.IdleBorderThickness = 1;
+            this.PayBtn.IdleCornerRadius = 20;
+            this.PayBtn.IdleFillColor = System.Drawing.Color.White;
+            this.PayBtn.IdleForecolor = System.Drawing.Color.DeepPink;
+            this.PayBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.PayBtn.Location = new System.Drawing.Point(459, 209);
+            this.PayBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.PayBtn.Name = "PayBtn";
+            this.PayBtn.Size = new System.Drawing.Size(129, 40);
+            this.PayBtn.TabIndex = 154;
+            this.PayBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PayBtn.Click += new System.EventHandler(this.PayBtn_Click);
             // 
             // AmountTb
             // 
@@ -233,14 +152,16 @@ namespace University_Management_System_2
             // 
             // StDeptTb
             // 
+            this.StDeptTb.Enabled = false;
             this.StDeptTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StDeptTb.Location = new System.Drawing.Point(747, 151);
             this.StDeptTb.Name = "StDeptTb";
-            this.StDeptTb.Size = new System.Drawing.Size(154, 27);
+            this.StDeptTb.Size = new System.Drawing.Size(132, 27);
             this.StDeptTb.TabIndex = 151;
             // 
             // StNameTb
             // 
+            this.StNameTb.Enabled = false;
             this.StNameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StNameTb.Location = new System.Drawing.Point(406, 151);
             this.StNameTb.Name = "StNameTb";
@@ -434,26 +355,6 @@ namespace University_Management_System_2
             this.panel1.Size = new System.Drawing.Size(7, 657);
             this.panel1.TabIndex = 122;
             // 
-            // StSemesterCb
-            // 
-            this.StSemesterCb.Font = new System.Drawing.Font("Calibri", 12F);
-            this.StSemesterCb.FormattingEnabled = true;
-            this.StSemesterCb.Location = new System.Drawing.Point(919, 151);
-            this.StSemesterCb.Name = "StSemesterCb";
-            this.StSemesterCb.Size = new System.Drawing.Size(119, 27);
-            this.StSemesterCb.TabIndex = 161;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DeepPink;
-            this.label13.Location = new System.Drawing.Point(915, 127);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 21);
-            this.label13.TabIndex = 160;
-            this.label13.Text = "Semester";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -473,6 +374,7 @@ namespace University_Management_System_2
             this.StIdCb.Name = "StIdCb";
             this.StIdCb.Size = new System.Drawing.Size(131, 27);
             this.StIdCb.TabIndex = 161;
+            this.StIdCb.SelectionChangeCommitted += new System.EventHandler(this.StIdCb_SelectionChangeCommitted);
             // 
             // LogOut_Lbl
             // 
@@ -493,6 +395,7 @@ namespace University_Management_System_2
             this.Camp_Lbl.Size = new System.Drawing.Size(75, 21);
             this.Camp_Lbl.TabIndex = 168;
             this.Camp_Lbl.Text = "Campus";
+            this.Camp_Lbl.Click += new System.EventHandler(this.Camp_Lbl_Click);
             // 
             // Sal_Lbl
             // 
@@ -503,6 +406,7 @@ namespace University_Management_System_2
             this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
             this.Sal_Lbl.TabIndex = 167;
             this.Sal_Lbl.Text = "Salary";
+            this.Sal_Lbl.Click += new System.EventHandler(this.Sal_Lbl_Click);
             // 
             // FeeLbl
             // 
@@ -523,6 +427,7 @@ namespace University_Management_System_2
             this.Course_Lbl.Size = new System.Drawing.Size(74, 21);
             this.Course_Lbl.TabIndex = 165;
             this.Course_Lbl.Text = "Courses";
+            this.Course_Lbl.Click += new System.EventHandler(this.Course_Lbl_Click);
             // 
             // Fac_Lbl
             // 
@@ -533,6 +438,7 @@ namespace University_Management_System_2
             this.Fac_Lbl.Size = new System.Drawing.Size(70, 21);
             this.Fac_Lbl.TabIndex = 164;
             this.Fac_Lbl.Text = "Faculty";
+            this.Fac_Lbl.Click += new System.EventHandler(this.Fac_Lbl_Click);
             // 
             // Dept_Lbl
             // 
@@ -543,6 +449,7 @@ namespace University_Management_System_2
             this.Dept_Lbl.Size = new System.Drawing.Size(105, 21);
             this.Dept_Lbl.TabIndex = 170;
             this.Dept_Lbl.Text = "Department";
+            this.Dept_Lbl.Click += new System.EventHandler(this.Dept_Lbl_Click);
             // 
             // Student_Lbl
             // 
@@ -553,6 +460,7 @@ namespace University_Management_System_2
             this.Student_Lbl.Size = new System.Drawing.Size(71, 21);
             this.Student_Lbl.TabIndex = 163;
             this.Student_Lbl.Text = "Student";
+            this.Student_Lbl.Click += new System.EventHandler(this.Student_Lbl_Click);
             // 
             // Home_Lbl
             // 
@@ -563,6 +471,95 @@ namespace University_Management_System_2
             this.Home_Lbl.Size = new System.Drawing.Size(58, 21);
             this.Home_Lbl.TabIndex = 162;
             this.Home_Lbl.Text = "Home";
+            this.Home_Lbl.Click += new System.EventHandler(this.Home_Lbl_Click);
+            // 
+            // FeeDGV
+            // 
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            this.FeeDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            this.FeeDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.FeeDGV.BackgroundColor = System.Drawing.Color.White;
+            this.FeeDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.FeeDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.FeeDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FeeDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            this.FeeDGV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeeDGV.DefaultCellStyle = dataGridViewCellStyle24;
+            this.FeeDGV.EnableHeadersVisualStyles = false;
+            this.FeeDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.FeeDGV.Location = new System.Drawing.Point(257, 296);
+            this.FeeDGV.Name = "FeeDGV";
+            this.FeeDGV.RowHeadersVisible = false;
+            this.FeeDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.FeeDGV.Size = new System.Drawing.Size(781, 324);
+            this.FeeDGV.TabIndex = 171;
+            this.FeeDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.FeeDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.FeeDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.FeeDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.FeeDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.FeeDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.FeeDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.FeeDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.FeeDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.FeeDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.FeeDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FeeDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.FeeDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.FeeDGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.FeeDGV.ThemeStyle.ReadOnly = false;
+            this.FeeDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.FeeDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.FeeDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FeeDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.DeepPink;
+            this.FeeDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.FeeDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.FeeDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.FeeDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FeeDGV_CellContentClick);
+            // 
+            // SemLbl
+            // 
+            this.SemLbl.AutoSize = true;
+            this.SemLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SemLbl.ForeColor = System.Drawing.Color.DeepPink;
+            this.SemLbl.Location = new System.Drawing.Point(893, 127);
+            this.SemLbl.Name = "SemLbl";
+            this.SemLbl.Size = new System.Drawing.Size(82, 21);
+            this.SemLbl.TabIndex = 172;
+            this.SemLbl.Text = "Semester";
+            // 
+            // SemesterCb
+            // 
+            this.SemesterCb.Font = new System.Drawing.Font("Calibri", 12F);
+            this.SemesterCb.FormattingEnabled = true;
+            this.SemesterCb.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
+            this.SemesterCb.Location = new System.Drawing.Point(897, 151);
+            this.SemesterCb.Name = "SemesterCb";
+            this.SemesterCb.Size = new System.Drawing.Size(131, 27);
+            this.SemesterCb.TabIndex = 161;
+            this.SemesterCb.SelectionChangeCommitted += new System.EventHandler(this.StIdCb_SelectionChangeCommitted);
             // 
             // Fees
             // 
@@ -570,6 +567,8 @@ namespace University_Management_System_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
+            this.Controls.Add(this.SemLbl);
+            this.Controls.Add(this.FeeDGV);
             this.Controls.Add(this.LogOut_Lbl);
             this.Controls.Add(this.Camp_Lbl);
             this.Controls.Add(this.Sal_Lbl);
@@ -579,14 +578,11 @@ namespace University_Management_System_2
             this.Controls.Add(this.Dept_Lbl);
             this.Controls.Add(this.Student_Lbl);
             this.Controls.Add(this.Home_Lbl);
+            this.Controls.Add(this.SemesterCb);
             this.Controls.Add(this.StIdCb);
-            this.Controls.Add(this.StSemesterCb);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.EditBtn);
-            this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.ResetBtn);
+            this.Controls.Add(this.PayBtn);
             this.Controls.Add(this.AmountTb);
             this.Controls.Add(this.StDeptTb);
             this.Controls.Add(this.StNameTb);
@@ -612,7 +608,6 @@ namespace University_Management_System_2
             this.Name = "Fees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fees";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -623,6 +618,7 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FeeDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -631,10 +627,8 @@ namespace University_Management_System_2
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
-        private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
-        private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Bunifu.Framework.UI.BunifuThinButton2 ResetBtn;
+        private Bunifu.Framework.UI.BunifuThinButton2 PayBtn;
         private System.Windows.Forms.TextBox AmountTb;
         private System.Windows.Forms.TextBox StDeptTb;
         private System.Windows.Forms.TextBox StNameTb;
@@ -656,8 +650,6 @@ namespace University_Management_System_2
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox StSemesterCb;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox StIdCb;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label LogOut_Lbl;
@@ -669,5 +661,8 @@ namespace University_Management_System_2
         private System.Windows.Forms.Label Dept_Lbl;
         private System.Windows.Forms.Label Student_Lbl;
         private System.Windows.Forms.Label Home_Lbl;
+        private Guna.UI2.WinForms.Guna2DataGridView FeeDGV;
+        private System.Windows.Forms.Label SemLbl;
+        private System.Windows.Forms.ComboBox SemesterCb;
     }
 }

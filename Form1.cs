@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,24 +16,100 @@ namespace University_Management_System_2
         public Home()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
+            Count_Students();
+            Count_Department();
+            Count_Faculty();
+            Count_Campus();
+            SumIncome();
 
         }
+        SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive\University Management System 2\UniversityDataBase.mdf;Integrated Security=True");
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Count_Students() 
         {
-            Department depart = new Department();
+            Connection.Open();
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Count(*) from StudentTbl",Connection);
+            DataTable data = new DataTable();
+            adaptor.Fill(data);
+            Student_Num.Text = data.Rows[0][0].ToString();
+            Connection.Close();
+        }
+        private void Count_Faculty()
+        {
+            Connection.Open();
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Count(*) from FacultyTbl", Connection);
+            DataTable data = new DataTable();
+            adaptor.Fill(data);
+            Faculty_Lbl.Text = data.Rows[0][0].ToString();
+            Connection.Close();
+        }
+        private void Count_Department()
+        {
+            Connection.Open();
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Count(*) from DepartmentTbl", Connection);
+            DataTable data = new DataTable();
+            adaptor.Fill(data);
+            Dept_Num.Text = data.Rows[0][0].ToString();
+            Connection.Close();
+        }
+        private void Count_Campus()
+        {
+            Connection.Open();
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Count(*) from CampusTbl", Connection);
+            DataTable data = new DataTable();
+            adaptor.Fill(data);
+            Camp_Num.Text = data.Rows[0][0].ToString();
+            Connection.Close();
+        }
+        private void SumIncome() 
+        {
+            Connection.Open();
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Sum(Amount) from FeesTbl", Connection);
+            DataTable data = new DataTable();
+            adaptor.Fill(data);
+            FeeLbl.Text = "Rs. " +data.Rows[0][0].ToString();
+            Connection.Close();
+        }
+        private void SumFees()
+        {
+            Connection.Open();
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Sum(Amount) from FeesTbl", Connection);
+            DataTable data = new DataTable();
+            adaptor.Fill(data);
+            FeeLbl.Text = "Rs. " + data.Rows[0][0].ToString();
+            Connection.Close();
+        }
+        private void Student_Lbl_Click(object sender, EventArgs e)
+        {
+            Student Std = new Student();
+        }
+
+        private void Dept_Lbl_Click(object sender, EventArgs e)
+        {
+            Department Dept = new Department();
             this.Hide();
-            depart.Show();
+            Dept.Show();
+        }
 
+        private void Fac_Lbl_Click(object sender, EventArgs e)
+        {
+            Faculty Fac = new Faculty();
+            this.Hide();
+            Fac.Show();
+        }
+
+        private void Course_Lbl_Click(object sender, EventArgs e)
+        {
+            Courses Course = new Courses();
+            this.Hide();
+            Course.Show();
+        }
+
+        private void Camp_Lbl_Click(object sender, EventArgs e)
+        {
+            Campus Camp = new Campus();
+            this.Hide();
+            Camp.Show();
         }
     }
 }

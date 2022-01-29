@@ -205,7 +205,7 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@SDeptId", St_DeptIdCb.SelectedValue.ToString());
                     cmd.Parameters.AddWithValue("@SDept", St_DeptTb.Text);
                     cmd.Parameters.AddWithValue("@SPh", St_PhoneTb.Text);
-                    cmd.Parameters.AddWithValue("@Sem", St_SemesterCb.SelectedItem.ToString()); ;
+                    cmd.Parameters.AddWithValue("@Sem", St_SemesterCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@SKey", Key); ;
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Student Updated...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);

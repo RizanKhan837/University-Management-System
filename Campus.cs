@@ -16,6 +16,7 @@ namespace University_Management_System_2
         public Campus()
         {
             InitializeComponent();
+            Display();
         }
 
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive\University Management System 2\UniversityDataBase.mdf;Integrated Security=True");
