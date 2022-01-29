@@ -156,5 +156,12 @@ namespace University_Management_System_2
             this.Hide();
             Std.Show();
         }
+
+        private void Fac_Lbl_Click(object sender, EventArgs e)
+        {
+            Faculty Fac = new Faculty();
+            this.Hide();
+            Fac.Show();
+        }
     }
 }

@@ -51,7 +51,7 @@ namespace University_Management_System_2
                 adapter.Fill(data);
                 foreach (DataRow dataRow in data.Rows)
                 {
-                    St_DeptTb.Text = dataRow["DeptName"].ToString();
+                    St_DeptTb.Text = dataRow["Name"].ToString();
                 }
                 Connection.Close();
             }
@@ -225,6 +225,13 @@ namespace University_Management_System_2
             Department Dept = new Department();
             this.Hide();
             Dept.Show();
+        }
+
+        private void Fac_Lbl_Click(object sender, EventArgs e)
+        {
+            Faculty Fac = new Faculty();
+            this.Hide();
+            Fac.Show();
         }
     }
 }

@@ -275,7 +275,7 @@ namespace University_Management_System_2
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Location = new System.Drawing.Point(100, 503);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(59, 3);

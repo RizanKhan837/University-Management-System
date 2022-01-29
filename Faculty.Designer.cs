@@ -31,9 +31,9 @@ namespace University_Management_System_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Faculty));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.F_DOBdt = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.F_DeptIdCb = new System.Windows.Forms.ComboBox();
@@ -55,7 +55,6 @@ namespace University_Management_System_2
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.F_GenderCb = new System.Windows.Forms.ComboBox();
             this.F_AddressTb = new System.Windows.Forms.TextBox();
             this.F_NameTb = new System.Windows.Forms.TextBox();
@@ -81,6 +80,7 @@ namespace University_Management_System_2
             this.Dept_Lbl = new System.Windows.Forms.Label();
             this.Student_Lbl = new System.Windows.Forms.Label();
             this.Home_Lbl = new System.Windows.Forms.Label();
+            this.Fac_DGV = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -90,8 +90,8 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fac_DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // F_DOBdt
@@ -108,7 +108,6 @@ namespace University_Management_System_2
             this.F_DOBdt.Size = new System.Drawing.Size(177, 27);
             this.F_DOBdt.TabIndex = 119;
             this.F_DOBdt.Value = new System.DateTime(2022, 1, 9, 19, 31, 52, 936);
-            this.F_DOBdt.Visible = false;
             // 
             // DeleteBtn
             // 
@@ -143,9 +142,11 @@ namespace University_Management_System_2
             this.F_DeptIdCb.Name = "F_DeptIdCb";
             this.F_DeptIdCb.Size = new System.Drawing.Size(100, 27);
             this.F_DeptIdCb.TabIndex = 114;
+            this.F_DeptIdCb.SelectionChangeCommitted += new System.EventHandler(this.F_DeptIdCb_SelectionChangeCommitted);
             // 
             // F_DeptTb
             // 
+            this.F_DeptTb.Enabled = false;
             this.F_DeptTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F_DeptTb.Location = new System.Drawing.Point(234, 222);
             this.F_DeptTb.Name = "F_DeptTb";
@@ -348,64 +349,7 @@ namespace University_Management_System_2
             this.SaveBtn.Size = new System.Drawing.Size(129, 40);
             this.SaveBtn.TabIndex = 115;
             this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(258, 352);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(781, 269);
-            this.guna2DataGridView1.TabIndex = 118;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.Visible = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // F_GenderCb
             // 
@@ -443,7 +387,7 @@ namespace University_Management_System_2
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Location = new System.Drawing.Point(102, 318);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(67, 3);
@@ -638,6 +582,7 @@ namespace University_Management_System_2
             this.Dept_Lbl.Size = new System.Drawing.Size(105, 21);
             this.Dept_Lbl.TabIndex = 128;
             this.Dept_Lbl.Text = "Department";
+            this.Dept_Lbl.Click += new System.EventHandler(this.Dept_Lbl_Click);
             // 
             // Student_Lbl
             // 
@@ -648,6 +593,7 @@ namespace University_Management_System_2
             this.Student_Lbl.Size = new System.Drawing.Size(71, 21);
             this.Student_Lbl.TabIndex = 121;
             this.Student_Lbl.Text = "Student";
+            this.Student_Lbl.Click += new System.EventHandler(this.Student_Lbl_Click);
             // 
             // Home_Lbl
             // 
@@ -659,12 +605,71 @@ namespace University_Management_System_2
             this.Home_Lbl.TabIndex = 120;
             this.Home_Lbl.Text = "Home";
             // 
+            // Fac_DGV
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Fac_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.Fac_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Fac_DGV.BackgroundColor = System.Drawing.Color.White;
+            this.Fac_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Fac_DGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Fac_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Fac_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.Fac_DGV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Fac_DGV.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Fac_DGV.EnableHeadersVisualStyles = false;
+            this.Fac_DGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Fac_DGV.Location = new System.Drawing.Point(258, 333);
+            this.Fac_DGV.Name = "Fac_DGV";
+            this.Fac_DGV.RowHeadersVisible = false;
+            this.Fac_DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Fac_DGV.Size = new System.Drawing.Size(781, 301);
+            this.Fac_DGV.TabIndex = 129;
+            this.Fac_DGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.Fac_DGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Fac_DGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Fac_DGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Fac_DGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Fac_DGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Fac_DGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Fac_DGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Fac_DGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.Fac_DGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Fac_DGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fac_DGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Fac_DGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Fac_DGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.Fac_DGV.ThemeStyle.ReadOnly = false;
+            this.Fac_DGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Fac_DGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Fac_DGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fac_DGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.DeepPink;
+            this.Fac_DGV.ThemeStyle.RowsStyle.Height = 22;
+            this.Fac_DGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Fac_DGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Fac_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Fac_DGV_CellContentClick);
+            // 
             // Faculty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
+            this.Controls.Add(this.Fac_DGV);
             this.Controls.Add(this.LogOut_Lbl);
             this.Controls.Add(this.Camp_Lbl);
             this.Controls.Add(this.Sal_Lbl);
@@ -698,7 +703,6 @@ namespace University_Management_System_2
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.F_GenderCb);
             this.Controls.Add(this.F_AddressTb);
             this.Controls.Add(this.F_NameTb);
@@ -724,8 +728,8 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Fac_DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -754,7 +758,6 @@ namespace University_Management_System_2
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.ComboBox F_GenderCb;
         private System.Windows.Forms.TextBox F_AddressTb;
         private System.Windows.Forms.TextBox F_NameTb;
@@ -780,5 +783,6 @@ namespace University_Management_System_2
         private System.Windows.Forms.Label Dept_Lbl;
         private System.Windows.Forms.Label Student_Lbl;
         private System.Windows.Forms.Label Home_Lbl;
+        private Guna.UI2.WinForms.Guna2DataGridView Fac_DGV;
     }
 }

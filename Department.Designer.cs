@@ -171,6 +171,7 @@ namespace University_Management_System_2
             this.Fac_Lbl.Size = new System.Drawing.Size(70, 21);
             this.Fac_Lbl.TabIndex = 20;
             this.Fac_Lbl.Text = "Faculty";
+            this.Fac_Lbl.Click += new System.EventHandler(this.Fac_Lbl_Click);
             // 
             // Dept_Lbl
             // 
