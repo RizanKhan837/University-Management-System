@@ -118,7 +118,7 @@ namespace University_Management_System_2
                 try
                 {
                     Connection.Open();
-                    SqlCommand cmd = new SqlCommand("Insert into StudentTbl(Name,DOB,Gender,Address,Qualification,Experience,DeptId,Department,Salary)values(@FN,@FDOB,@FGen,@FAdd,@FQ,@FE,@FDeptId,@FDept,@FSal)", Connection);
+                    SqlCommand cmd = new SqlCommand("Insert into FacultyTbl(Name,DOB,Gender,Address,Qualification,Experience,DeptId,Department,Salary)values(@FN,@FDOB,@FGen,@FAdd,@FQ,@FE,@FDeptId,@FDept,@FSal)", Connection);
                     cmd.Parameters.AddWithValue("@FN", F_NameTb.Text);
                     cmd.Parameters.AddWithValue("@FDOB", F_DOBdt.Value.Date);
                     cmd.Parameters.AddWithValue("@FGen", F_GenderCb.SelectedItem.ToString());
@@ -166,6 +166,67 @@ namespace University_Management_System_2
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (F_NameTb.Text == "" || ExperienceTb.Text == "" || F_AddressTb.Text == "" || QualificationCb.SelectedIndex == -1 || F_DeptTb.Text == "" || F_GenderCb.SelectedIndex == -1 || F_DeptIdCb.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information...", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                try
+                {
+                    Connection.Open();
+                    SqlCommand cmd = new SqlCommand("Update FacultyTbl Set Name=@FN,DOB=@FDOB,Gender=@FGen,Address=@FAdd,Qualification=@FQ,Experience=@FE,DeptId=@FDeptId,Department=@FDept,Salary=@FSal where F_Id=@FKey", Connection);
+                    cmd.Parameters.AddWithValue("@FN", F_NameTb.Text);
+                    cmd.Parameters.AddWithValue("@FDOB", F_DOBdt.Value.Date);
+                    cmd.Parameters.AddWithValue("@FGen", F_GenderCb.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@FAdd", F_AddressTb.Text);
+                    cmd.Parameters.AddWithValue("@FQ", QualificationCb.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@FE", ExperienceTb.Text);
+                    cmd.Parameters.AddWithValue("@FDeptId", F_DeptIdCb.SelectedValue.ToString());
+                    cmd.Parameters.AddWithValue("@FDept", F_DeptTb.Text);
+                    cmd.Parameters.AddWithValue("@FSal", F_SalaryTb.Text); ;
+                    cmd.Parameters.AddWithValue("@FKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Faculty Updated...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Connection.Close();
+                    Display();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+                Reset();
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select The Faculty...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                try
+                {
+                    Connection.Open();
+                    SqlCommand cmd = new SqlCommand("Delete from FacultyTbl where F_Id=@FKey", Connection);
+                    cmd.Parameters.AddWithValue("@FKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Faculty Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Connection.Close();
+                    Display();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+                Reset();
             }
         }
     }

@@ -37,9 +37,7 @@ namespace University_Management_System_2
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.C_DeptIdCb = new System.Windows.Forms.ComboBox();
-            this.C_FacultyIdTb = new System.Windows.Forms.TextBox();
             this.C_FNameTb = new System.Windows.Forms.TextBox();
             this.CreditHrsTb = new System.Windows.Forms.TextBox();
             this.CNameTb = new System.Windows.Forms.TextBox();
@@ -75,7 +73,8 @@ namespace University_Management_System_2
             this.Dept_Lbl = new System.Windows.Forms.Label();
             this.Student_Lbl = new System.Windows.Forms.Label();
             this.Home_Lbl = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.Course_DGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.C_FacIdCb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -86,6 +85,7 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Course_DGV)).BeginInit();
             this.SuspendLayout();
             // 
             // DeleteBtn
@@ -112,6 +112,7 @@ namespace University_Management_System_2
             this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
             this.DeleteBtn.TabIndex = 73;
             this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // EditBtn
             // 
@@ -137,6 +138,7 @@ namespace University_Management_System_2
             this.EditBtn.Size = new System.Drawing.Size(129, 40);
             this.EditBtn.TabIndex = 72;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // SaveBtn
             // 
@@ -162,63 +164,7 @@ namespace University_Management_System_2
             this.SaveBtn.Size = new System.Drawing.Size(129, 40);
             this.SaveBtn.TabIndex = 71;
             this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(244, 297);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(811, 324);
-            this.guna2DataGridView1.TabIndex = 74;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // C_DeptIdCb
             // 
@@ -228,17 +174,11 @@ namespace University_Management_System_2
             this.C_DeptIdCb.Name = "C_DeptIdCb";
             this.C_DeptIdCb.Size = new System.Drawing.Size(89, 27);
             this.C_DeptIdCb.TabIndex = 70;
-            // 
-            // C_FacultyIdTb
-            // 
-            this.C_FacultyIdTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C_FacultyIdTb.Location = new System.Drawing.Point(804, 151);
-            this.C_FacultyIdTb.Name = "C_FacultyIdTb";
-            this.C_FacultyIdTb.Size = new System.Drawing.Size(101, 27);
-            this.C_FacultyIdTb.TabIndex = 69;
+            this.C_DeptIdCb.SelectionChangeCommitted += new System.EventHandler(this.C_DeptIdCb_SelectionChangeCommitted);
             // 
             // C_FNameTb
             // 
+            this.C_FNameTb.Enabled = false;
             this.C_FNameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C_FNameTb.Location = new System.Drawing.Point(914, 151);
             this.C_FNameTb.Name = "C_FNameTb";
@@ -266,7 +206,7 @@ namespace University_Management_System_2
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Location = new System.Drawing.Point(244, 268);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(811, 5);
+            this.panel2.Size = new System.Drawing.Size(781, 5);
             this.panel2.TabIndex = 65;
             // 
             // panel3
@@ -488,6 +428,7 @@ namespace University_Management_System_2
             // 
             // C_DeptNameTb
             // 
+            this.C_DeptNameTb.Enabled = false;
             this.C_DeptNameTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C_DeptNameTb.Location = new System.Drawing.Point(636, 151);
             this.C_DeptNameTb.Name = "C_DeptNameTb";
@@ -553,6 +494,7 @@ namespace University_Management_System_2
             this.Fac_Lbl.Size = new System.Drawing.Size(70, 21);
             this.Fac_Lbl.TabIndex = 87;
             this.Fac_Lbl.Text = "Faculty";
+            this.Fac_Lbl.Click += new System.EventHandler(this.Fac_Lbl_Click);
             // 
             // Dept_Lbl
             // 
@@ -563,6 +505,7 @@ namespace University_Management_System_2
             this.Dept_Lbl.Size = new System.Drawing.Size(105, 21);
             this.Dept_Lbl.TabIndex = 93;
             this.Dept_Lbl.Text = "Department";
+            this.Dept_Lbl.Click += new System.EventHandler(this.Dept_Lbl_Click);
             // 
             // Student_Lbl
             // 
@@ -573,6 +516,7 @@ namespace University_Management_System_2
             this.Student_Lbl.Size = new System.Drawing.Size(71, 21);
             this.Student_Lbl.TabIndex = 86;
             this.Student_Lbl.Text = "Student";
+            this.Student_Lbl.Click += new System.EventHandler(this.Student_Lbl_Click);
             // 
             // Home_Lbl
             // 
@@ -584,12 +528,81 @@ namespace University_Management_System_2
             this.Home_Lbl.TabIndex = 85;
             this.Home_Lbl.Text = "Home";
             // 
+            // Course_DGV
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Course_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.Course_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Course_DGV.BackgroundColor = System.Drawing.Color.White;
+            this.Course_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Course_DGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Course_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Course_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.Course_DGV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Course_DGV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Course_DGV.EnableHeadersVisualStyles = false;
+            this.Course_DGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Course_DGV.Location = new System.Drawing.Point(244, 297);
+            this.Course_DGV.Name = "Course_DGV";
+            this.Course_DGV.RowHeadersVisible = false;
+            this.Course_DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Course_DGV.Size = new System.Drawing.Size(781, 337);
+            this.Course_DGV.TabIndex = 94;
+            this.Course_DGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.Course_DGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Course_DGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Course_DGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Course_DGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Course_DGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Course_DGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Course_DGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Course_DGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.Course_DGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Course_DGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Course_DGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Course_DGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Course_DGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.Course_DGV.ThemeStyle.ReadOnly = false;
+            this.Course_DGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Course_DGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Course_DGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Course_DGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.DeepPink;
+            this.Course_DGV.ThemeStyle.RowsStyle.Height = 22;
+            this.Course_DGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Course_DGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Course_DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Course_DGV_CellContentClick);
+            // 
+            // C_FacIdCb
+            // 
+            this.C_FacIdCb.Font = new System.Drawing.Font("Calibri", 12F);
+            this.C_FacIdCb.FormattingEnabled = true;
+            this.C_FacIdCb.Location = new System.Drawing.Point(804, 151);
+            this.C_FacIdCb.Name = "C_FacIdCb";
+            this.C_FacIdCb.Size = new System.Drawing.Size(104, 27);
+            this.C_FacIdCb.TabIndex = 70;
+            this.C_FacIdCb.SelectionChangeCommitted += new System.EventHandler(this.C_FacIdCb_SelectionChangeCommitted);
+            // 
             // Courses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
+            this.Controls.Add(this.Course_DGV);
             this.Controls.Add(this.LogOut_Lbl);
             this.Controls.Add(this.Camp_Lbl);
             this.Controls.Add(this.Sal_Lbl);
@@ -602,10 +615,9 @@ namespace University_Management_System_2
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.C_FacIdCb);
             this.Controls.Add(this.C_DeptIdCb);
             this.Controls.Add(this.C_DeptNameTb);
-            this.Controls.Add(this.C_FacultyIdTb);
             this.Controls.Add(this.C_FNameTb);
             this.Controls.Add(this.CreditHrsTb);
             this.Controls.Add(this.CNameTb);
@@ -634,7 +646,6 @@ namespace University_Management_System_2
             this.Name = "Courses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Courses";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -645,6 +656,7 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Course_DGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,9 +667,7 @@ namespace University_Management_System_2
         private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.ComboBox C_DeptIdCb;
-        private System.Windows.Forms.TextBox C_FacultyIdTb;
         private System.Windows.Forms.TextBox C_FNameTb;
         private System.Windows.Forms.TextBox CreditHrsTb;
         private System.Windows.Forms.TextBox CNameTb;
@@ -693,5 +703,7 @@ namespace University_Management_System_2
         private System.Windows.Forms.Label Dept_Lbl;
         private System.Windows.Forms.Label Student_Lbl;
         private System.Windows.Forms.Label Home_Lbl;
+        private Guna.UI2.WinForms.Guna2DataGridView Course_DGV;
+        private System.Windows.Forms.ComboBox C_FacIdCb;
     }
 }

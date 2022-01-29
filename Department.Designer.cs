@@ -161,6 +161,7 @@ namespace University_Management_System_2
             this.Course_Lbl.Size = new System.Drawing.Size(74, 21);
             this.Course_Lbl.TabIndex = 21;
             this.Course_Lbl.Text = "Courses";
+            this.Course_Lbl.Click += new System.EventHandler(this.Course_Lbl_Click);
             // 
             // Fac_Lbl
             // 

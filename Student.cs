@@ -111,7 +111,7 @@ namespace University_Management_System_2
                 try
                 {
                     Connection.Open();
-                    SqlCommand cmd = new SqlCommand("Insert into StudentTbl(Name,DOB,Gender,Address,DeptId,DepName,Phone,Semester)values(@SN,@SDOB,@SGen,@SAdd,@SDeptId,@SDept,@SPh,@Sem)", Connection);
+                    SqlCommand cmd = new SqlCommand("Insert into StudentTbl(Name,DOB,Gender,Address,DeptId,Department,Phone,Semester)values(@SN,@SDOB,@SGen,@SAdd,@SDeptId,@SDept,@SPh,@Sem)", Connection);
                     cmd.Parameters.AddWithValue("@SN", StNameTb.Text);
                     cmd.Parameters.AddWithValue("@SDOB", StDOBdt.Value.Date);
                     cmd.Parameters.AddWithValue("@SGen", StGenderCb.SelectedItem.ToString());
@@ -197,7 +197,7 @@ namespace University_Management_System_2
                 try
                 {
                     Connection.Open();
-                    SqlCommand cmd = new SqlCommand("Update StudentTblSet Name=@SN,DOB=@SDOB,Gender=@SGen,Address=@SAdd,DeptId=@SDeptId,Department=@SDept,Phone=@SPh,Semester=@Sem where StId=@SKey", Connection);
+                    SqlCommand cmd = new SqlCommand("Update StudentTbl Set Name=@SN,DOB=@SDOB,Gender=@SGen,Address=@SAdd,DeptId=@SDeptId,Department=@SDept,Phone=@SPh,Semester=@Sem where StId=@SKey", Connection);
                     cmd.Parameters.AddWithValue("@SN", StNameTb.Text);
                     cmd.Parameters.AddWithValue("@SDOB", StDOBdt.Value.Date);
                     cmd.Parameters.AddWithValue("@SGen", StGenderCb.SelectedItem.ToString());

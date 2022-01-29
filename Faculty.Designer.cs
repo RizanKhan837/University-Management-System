@@ -133,6 +133,7 @@ namespace University_Management_System_2
             this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
             this.DeleteBtn.TabIndex = 117;
             this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // F_DeptIdCb
             // 
@@ -324,6 +325,7 @@ namespace University_Management_System_2
             this.EditBtn.Size = new System.Drawing.Size(129, 40);
             this.EditBtn.TabIndex = 116;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // SaveBtn
             // 
@@ -355,6 +357,9 @@ namespace University_Management_System_2
             // 
             this.F_GenderCb.Font = new System.Drawing.Font("Calibri", 12F);
             this.F_GenderCb.FormattingEnabled = true;
+            this.F_GenderCb.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.F_GenderCb.Location = new System.Drawing.Point(572, 151);
             this.F_GenderCb.Name = "F_GenderCb";
             this.F_GenderCb.Size = new System.Drawing.Size(100, 27);
@@ -481,6 +486,9 @@ namespace University_Management_System_2
             // 
             this.QualificationCb.Font = new System.Drawing.Font("Calibri", 12F);
             this.QualificationCb.FormattingEnabled = true;
+            this.QualificationCb.Items.AddRange(new object[] {
+            "Masters",
+            "Ph.D"});
             this.QualificationCb.Location = new System.Drawing.Point(942, 151);
             this.QualificationCb.Name = "QualificationCb";
             this.QualificationCb.Size = new System.Drawing.Size(116, 27);

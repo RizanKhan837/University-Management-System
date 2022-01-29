@@ -16,5 +16,12 @@ namespace University_Management_System_2
         {
             InitializeComponent();
         }
+
+        private void Course_Lbl_Click(object sender, EventArgs e)
+        {
+            Courses Course = new Courses();
+            this.Hide();
+            Course.Show();
+        }
     }
 }
