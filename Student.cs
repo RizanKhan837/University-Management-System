@@ -233,5 +233,19 @@ namespace University_Management_System_2
             this.Hide();
             Fac.Show();
         }
+
+        private void Course_Lbl_Click(object sender, EventArgs e)
+        {
+            Courses Course = new Courses();
+            this.Hide();
+            Course.Show();
+        }
+
+        private void Camp_Lbl_Click(object sender, EventArgs e)
+        {
+            Campus Camp = new Campus();
+            this.Hide();
+            Camp.Show();
+        }
     }
 }

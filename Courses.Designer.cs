@@ -144,9 +144,9 @@ namespace University_Management_System_2
             // 
             this.SaveBtn.ActiveBorderThickness = 1;
             this.SaveBtn.ActiveCornerRadius = 20;
-            this.SaveBtn.ActiveFillColor = System.Drawing.Color.HotPink;
+            this.SaveBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
             this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.SaveBtn.ActiveLineColor = System.Drawing.Color.HotPink;
+            this.SaveBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
             this.SaveBtn.BackColor = System.Drawing.Color.White;
             this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
             this.SaveBtn.ButtonText = "Save";
@@ -454,6 +454,7 @@ namespace University_Management_System_2
             this.Camp_Lbl.Size = new System.Drawing.Size(75, 21);
             this.Camp_Lbl.TabIndex = 91;
             this.Camp_Lbl.Text = "Campus";
+            this.Camp_Lbl.Click += new System.EventHandler(this.Camp_Lbl_Click);
             // 
             // Sal_Lbl
             // 

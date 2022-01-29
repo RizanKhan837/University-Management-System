@@ -271,5 +271,13 @@ namespace University_Management_System_2
                 Reset();
             }
         }
+
+        private void Camp_Lbl_Click(object sender, EventArgs e)
+        {
+            Campus Camp = new Campus();
+            this.Hide();
+            Camp.Show();
+        }
+
     }
 }
