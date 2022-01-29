@@ -31,13 +31,13 @@ namespace University_Management_System_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Student));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.StDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.StGenderCb = new System.Windows.Forms.ComboBox();
             this.St_DeptTb = new System.Windows.Forms.TextBox();
             this.StAddressTb = new System.Windows.Forms.TextBox();
@@ -46,20 +46,11 @@ namespace University_Management_System_2
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -79,7 +70,16 @@ namespace University_Management_System_2
             this.St_PhoneTb = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.St_SemesterCb = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.Home_Lbl = new System.Windows.Forms.Label();
+            this.Student_Lbl = new System.Windows.Forms.Label();
+            this.Dept_Lbl = new System.Windows.Forms.Label();
+            this.Fac_Lbl = new System.Windows.Forms.Label();
+            this.Course_Lbl = new System.Windows.Forms.Label();
+            this.FeeLbl = new System.Windows.Forms.Label();
+            this.Sal_Lbl = new System.Windows.Forms.Label();
+            this.Camp_Lbl = new System.Windows.Forms.Label();
+            this.LogOut_Lbl = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.StDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -116,6 +116,7 @@ namespace University_Management_System_2
             this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
             this.DeleteBtn.TabIndex = 73;
             this.DeleteBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // EditBtn
             // 
@@ -141,6 +142,7 @@ namespace University_Management_System_2
             this.EditBtn.Size = new System.Drawing.Size(129, 40);
             this.EditBtn.TabIndex = 72;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // SaveBtn
             // 
@@ -166,69 +168,73 @@ namespace University_Management_System_2
             this.SaveBtn.Size = new System.Drawing.Size(129, 40);
             this.SaveBtn.TabIndex = 71;
             this.SaveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // guna2DataGridView1
+            // StDGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(257, 352);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(781, 269);
-            this.guna2DataGridView1.TabIndex = 74;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.Visible = false;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.StDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.StDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.StDGV.BackgroundColor = System.Drawing.Color.White;
+            this.StDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.StDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.StDGV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StDGV.DefaultCellStyle = dataGridViewCellStyle12;
+            this.StDGV.EnableHeadersVisualStyles = false;
+            this.StDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.StDGV.Location = new System.Drawing.Point(257, 339);
+            this.StDGV.Name = "StDGV";
+            this.StDGV.RowHeadersVisible = false;
+            this.StDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.StDGV.Size = new System.Drawing.Size(781, 269);
+            this.StDGV.TabIndex = 74;
+            this.StDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.StDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.StDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.StDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.StDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.StDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.StDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.StDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.StDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.StDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.StDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.StDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.StDGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.StDGV.ThemeStyle.ReadOnly = false;
+            this.StDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.StDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.StDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.DeepPink;
+            this.StDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.StDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.StDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.StDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StDGV_CellContentClick);
             // 
             // StGenderCb
             // 
             this.StGenderCb.Font = new System.Drawing.Font("Calibri", 12F);
             this.StGenderCb.FormattingEnabled = true;
+            this.StGenderCb.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.StGenderCb.Location = new System.Drawing.Point(571, 151);
             this.StGenderCb.Name = "StGenderCb";
             this.StGenderCb.Size = new System.Drawing.Size(100, 27);
@@ -237,6 +243,7 @@ namespace University_Management_System_2
             // 
             // St_DeptTb
             // 
+            this.St_DeptTb.Enabled = false;
             this.St_DeptTb.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.St_DeptTb.Location = new System.Drawing.Point(941, 151);
             this.St_DeptTb.Name = "St_DeptTb";
@@ -306,66 +313,6 @@ namespace University_Management_System_2
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(99, 613);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 21);
-            this.label9.TabIndex = 56;
-            this.label9.Text = "Logout";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(98, 546);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 21);
-            this.label8.TabIndex = 55;
-            this.label8.Text = "Campus";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(96, 480);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 21);
-            this.label7.TabIndex = 54;
-            this.label7.Text = "Salary";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(96, 418);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 21);
-            this.label6.TabIndex = 53;
-            this.label6.Text = "Fees";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(97, 352);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 21);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "Courses";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(97, 297);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 21);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Faculty";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -415,36 +362,6 @@ namespace University_Management_System_2
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(97, 237);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 21);
-            this.label3.TabIndex = 61;
-            this.label3.Text = "Department";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(97, 179);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 21);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Student";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 21);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Home";
             // 
             // pictureBox10
             // 
@@ -568,7 +485,6 @@ namespace University_Management_System_2
             this.StDOBdt.Size = new System.Drawing.Size(177, 27);
             this.StDOBdt.TabIndex = 75;
             this.StDOBdt.Value = new System.DateTime(2022, 1, 9, 19, 31, 52, 936);
-            this.StDOBdt.Visible = false;
             // 
             // label14
             // 
@@ -601,6 +517,7 @@ namespace University_Management_System_2
             this.St_DeptIdCb.Size = new System.Drawing.Size(100, 27);
             this.St_DeptIdCb.TabIndex = 70;
             this.St_DeptIdCb.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.St_DeptIdCb.SelectionChangeCommitted += new System.EventHandler(this.St_DeptIdCb_SelectionChangeCommitted);
             // 
             // label16
             // 
@@ -636,11 +553,111 @@ namespace University_Management_System_2
             // 
             this.St_SemesterCb.Font = new System.Drawing.Font("Calibri", 12F);
             this.St_SemesterCb.FormattingEnabled = true;
+            this.St_SemesterCb.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"});
             this.St_SemesterCb.Location = new System.Drawing.Point(387, 214);
             this.St_SemesterCb.Name = "St_SemesterCb";
             this.St_SemesterCb.Size = new System.Drawing.Size(100, 27);
             this.St_SemesterCb.TabIndex = 70;
             this.St_SemesterCb.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // Home_Lbl
+            // 
+            this.Home_Lbl.AutoSize = true;
+            this.Home_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home_Lbl.Location = new System.Drawing.Point(98, 121);
+            this.Home_Lbl.Name = "Home_Lbl";
+            this.Home_Lbl.Size = new System.Drawing.Size(58, 21);
+            this.Home_Lbl.TabIndex = 76;
+            this.Home_Lbl.Text = "Home";
+            // 
+            // Student_Lbl
+            // 
+            this.Student_Lbl.AutoSize = true;
+            this.Student_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Student_Lbl.Location = new System.Drawing.Point(98, 179);
+            this.Student_Lbl.Name = "Student_Lbl";
+            this.Student_Lbl.Size = new System.Drawing.Size(71, 21);
+            this.Student_Lbl.TabIndex = 77;
+            this.Student_Lbl.Text = "Student";
+            // 
+            // Dept_Lbl
+            // 
+            this.Dept_Lbl.AutoSize = true;
+            this.Dept_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dept_Lbl.Location = new System.Drawing.Point(98, 237);
+            this.Dept_Lbl.Name = "Dept_Lbl";
+            this.Dept_Lbl.Size = new System.Drawing.Size(105, 21);
+            this.Dept_Lbl.TabIndex = 84;
+            this.Dept_Lbl.Text = "Department";
+            this.Dept_Lbl.Click += new System.EventHandler(this.Dept_Lbl_Click);
+            // 
+            // Fac_Lbl
+            // 
+            this.Fac_Lbl.AutoSize = true;
+            this.Fac_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fac_Lbl.Location = new System.Drawing.Point(98, 297);
+            this.Fac_Lbl.Name = "Fac_Lbl";
+            this.Fac_Lbl.Size = new System.Drawing.Size(70, 21);
+            this.Fac_Lbl.TabIndex = 78;
+            this.Fac_Lbl.Text = "Faculty";
+            // 
+            // Course_Lbl
+            // 
+            this.Course_Lbl.AutoSize = true;
+            this.Course_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Course_Lbl.Location = new System.Drawing.Point(98, 352);
+            this.Course_Lbl.Name = "Course_Lbl";
+            this.Course_Lbl.Size = new System.Drawing.Size(74, 21);
+            this.Course_Lbl.TabIndex = 79;
+            this.Course_Lbl.Text = "Courses";
+            // 
+            // FeeLbl
+            // 
+            this.FeeLbl.AutoSize = true;
+            this.FeeLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FeeLbl.Location = new System.Drawing.Point(97, 418);
+            this.FeeLbl.Name = "FeeLbl";
+            this.FeeLbl.Size = new System.Drawing.Size(47, 21);
+            this.FeeLbl.TabIndex = 80;
+            this.FeeLbl.Text = "Fees";
+            // 
+            // Sal_Lbl
+            // 
+            this.Sal_Lbl.AutoSize = true;
+            this.Sal_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sal_Lbl.Location = new System.Drawing.Point(97, 480);
+            this.Sal_Lbl.Name = "Sal_Lbl";
+            this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
+            this.Sal_Lbl.TabIndex = 81;
+            this.Sal_Lbl.Text = "Salary";
+            // 
+            // Camp_Lbl
+            // 
+            this.Camp_Lbl.AutoSize = true;
+            this.Camp_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camp_Lbl.Location = new System.Drawing.Point(99, 546);
+            this.Camp_Lbl.Name = "Camp_Lbl";
+            this.Camp_Lbl.Size = new System.Drawing.Size(75, 21);
+            this.Camp_Lbl.TabIndex = 82;
+            this.Camp_Lbl.Text = "Campus";
+            // 
+            // LogOut_Lbl
+            // 
+            this.LogOut_Lbl.AutoSize = true;
+            this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOut_Lbl.Location = new System.Drawing.Point(100, 613);
+            this.LogOut_Lbl.Name = "LogOut_Lbl";
+            this.LogOut_Lbl.Size = new System.Drawing.Size(66, 21);
+            this.LogOut_Lbl.TabIndex = 83;
+            this.LogOut_Lbl.Text = "Logout";
             // 
             // Student
             // 
@@ -648,11 +665,20 @@ namespace University_Management_System_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
+            this.Controls.Add(this.LogOut_Lbl);
+            this.Controls.Add(this.Camp_Lbl);
+            this.Controls.Add(this.Sal_Lbl);
+            this.Controls.Add(this.FeeLbl);
+            this.Controls.Add(this.Course_Lbl);
+            this.Controls.Add(this.Fac_Lbl);
+            this.Controls.Add(this.Dept_Lbl);
+            this.Controls.Add(this.Student_Lbl);
+            this.Controls.Add(this.Home_Lbl);
             this.Controls.Add(this.StDOBdt);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.StDGV);
             this.Controls.Add(this.St_SemesterCb);
             this.Controls.Add(this.St_DeptIdCb);
             this.Controls.Add(this.StGenderCb);
@@ -664,12 +690,6 @@ namespace University_Management_System_2
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
@@ -678,9 +698,6 @@ namespace University_Management_System_2
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -696,7 +713,7 @@ namespace University_Management_System_2
             this.Name = "Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -717,7 +734,7 @@ namespace University_Management_System_2
         private Bunifu.Framework.UI.BunifuThinButton2 DeleteBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 EditBtn;
         private Bunifu.Framework.UI.BunifuThinButton2 SaveBtn;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView StDGV;
         private System.Windows.Forms.ComboBox StGenderCb;
         private System.Windows.Forms.TextBox St_DeptTb;
         private System.Windows.Forms.TextBox StAddressTb;
@@ -726,20 +743,11 @@ namespace University_Management_System_2
         private System.Windows.Forms.Panel panel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -759,5 +767,14 @@ namespace University_Management_System_2
         private System.Windows.Forms.TextBox St_PhoneTb;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label LogOut_Lbl;
+        private System.Windows.Forms.Label Camp_Lbl;
+        private System.Windows.Forms.Label Sal_Lbl;
+        private System.Windows.Forms.Label FeeLbl;
+        private System.Windows.Forms.Label Course_Lbl;
+        private System.Windows.Forms.Label Fac_Lbl;
+        private System.Windows.Forms.Label Dept_Lbl;
+        private System.Windows.Forms.Label Student_Lbl;
+        private System.Windows.Forms.Label Home_Lbl;
     }
 }

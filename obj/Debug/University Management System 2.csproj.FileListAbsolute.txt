@@ -22,3 +22,10 @@ C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Managem
 C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
 C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Guna.UI2.dll
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Student.resources
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\UniversityDataBase.mdf
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\UniversityDataBase_log.ldf
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Campus.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Courses.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.F_NameTb.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Fees.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Salaries.resources
