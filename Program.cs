@@ -13,7 +13,7 @@ namespace University_Management_System_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Faculty());
+            Application.Run(new Department());
         }
     }
 }

@@ -26,6 +26,6 @@ C:\Users\HP\OneDrive\University Management System 2\bin\Debug\UniversityDataBase
 C:\Users\HP\OneDrive\University Management System 2\bin\Debug\UniversityDataBase_log.ldf
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Campus.resources
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Courses.resources
-C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.F_NameTb.resources
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Fees.resources
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Salaries.resources
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Faculty.resources

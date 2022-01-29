@@ -53,7 +53,7 @@ namespace University_Management_System_2
                 try
                 {
                     Connection.Open();
-                    SqlCommand cmd = new SqlCommand("Insert into DepartmentTbl(DeptName,DeptIntake,DeptFees)values(@DN,@DI,@DF)", Connection);
+                    SqlCommand cmd = new SqlCommand("Insert into DepartmentTbl(Name,Intake,Fees)values(@DN,@DI,@DF)", Connection);
                     cmd.Parameters.AddWithValue("@DN", DeptNameTb.Text);
                     cmd.Parameters.AddWithValue("@DI", DeptIntakeTb.Text);
                     cmd.Parameters.AddWithValue("@DF", DeptFeesTb.Text);
@@ -106,7 +106,7 @@ namespace University_Management_System_2
                 try
                 {
                     Connection.Open();
-                    SqlCommand cmd = new SqlCommand("Update DepartmentTbl Set DeptName=@DN ,DeptIntake=@DI ,DeptFees=@DF where DeptId=@DKey", Connection);
+                    SqlCommand cmd = new SqlCommand("Update DepartmentTbl Set Name=@DN ,Intake=@DI ,Fees=@DF where DeptId=@DKey", Connection);
                     cmd.Parameters.AddWithValue("@DN", DeptNameTb.Text);
                     cmd.Parameters.AddWithValue("@DI", DeptIntakeTb.Text);
                     cmd.Parameters.AddWithValue("@DF", DeptFeesTb.Text);
