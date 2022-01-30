@@ -31,9 +31,9 @@ namespace University_Management_System_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Courses));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -75,6 +75,8 @@ namespace University_Management_System_2
             this.Home_Lbl = new System.Windows.Forms.Label();
             this.Course_DGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.C_FacIdCb = new System.Windows.Forms.ComboBox();
+            this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
+            this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -92,20 +94,20 @@ namespace University_Management_System_2
             // 
             this.DeleteBtn.ActiveBorderThickness = 1;
             this.DeleteBtn.ActiveCornerRadius = 20;
-            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
             this.DeleteBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.DeleteBtn.BackColor = System.Drawing.Color.White;
             this.DeleteBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeleteBtn.BackgroundImage")));
             this.DeleteBtn.ButtonText = "Delete";
             this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.DeleteBtn.IdleBorderThickness = 1;
             this.DeleteBtn.IdleCornerRadius = 20;
             this.DeleteBtn.IdleFillColor = System.Drawing.Color.White;
-            this.DeleteBtn.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.DeleteBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.DeleteBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
+            this.DeleteBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.DeleteBtn.Location = new System.Drawing.Point(782, 202);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5);
             this.DeleteBtn.Name = "DeleteBtn";
@@ -118,20 +120,20 @@ namespace University_Management_System_2
             // 
             this.EditBtn.ActiveBorderThickness = 1;
             this.EditBtn.ActiveCornerRadius = 20;
-            this.EditBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
             this.EditBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.EditBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.EditBtn.BackColor = System.Drawing.Color.White;
             this.EditBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.BackgroundImage")));
             this.EditBtn.ButtonText = "Edit";
             this.EditBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.EditBtn.IdleBorderThickness = 1;
             this.EditBtn.IdleCornerRadius = 20;
             this.EditBtn.IdleFillColor = System.Drawing.Color.White;
-            this.EditBtn.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.EditBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.EditBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
+            this.EditBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.EditBtn.Location = new System.Drawing.Point(575, 202);
             this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
             this.EditBtn.Name = "EditBtn";
@@ -144,20 +146,20 @@ namespace University_Management_System_2
             // 
             this.SaveBtn.ActiveBorderThickness = 1;
             this.SaveBtn.ActiveCornerRadius = 20;
-            this.SaveBtn.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
             this.SaveBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.SaveBtn.ActiveLineColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.SaveBtn.BackColor = System.Drawing.Color.White;
             this.SaveBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SaveBtn.BackgroundImage")));
             this.SaveBtn.ButtonText = "Save";
             this.SaveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn.ForeColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.SaveBtn.IdleBorderThickness = 1;
             this.SaveBtn.IdleCornerRadius = 20;
             this.SaveBtn.IdleFillColor = System.Drawing.Color.White;
-            this.SaveBtn.IdleForecolor = System.Drawing.Color.DeepPink;
-            this.SaveBtn.IdleLineColor = System.Drawing.Color.DeepPink;
+            this.SaveBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
+            this.SaveBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.SaveBtn.Location = new System.Drawing.Point(368, 202);
             this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
             this.SaveBtn.Name = "SaveBtn";
@@ -251,7 +253,7 @@ namespace University_Management_System_2
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DeepPink;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
             this.label13.Location = new System.Drawing.Point(800, 127);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(93, 21);
@@ -262,7 +264,7 @@ namespace University_Management_System_2
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DeepPink;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
             this.label12.Location = new System.Drawing.Point(910, 127);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(120, 21);
@@ -273,7 +275,7 @@ namespace University_Management_System_2
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DeepPink;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
             this.label11.Location = new System.Drawing.Point(403, 127);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(115, 21);
@@ -284,7 +286,7 @@ namespace University_Management_System_2
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DeepPink;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
             this.label10.Location = new System.Drawing.Point(240, 127);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 21);
@@ -408,7 +410,7 @@ namespace University_Management_System_2
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DeepPink;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
             this.label14.Location = new System.Drawing.Point(534, 127);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 21);
@@ -419,7 +421,7 @@ namespace University_Management_System_2
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.DeepPink;
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(210)))), ((int)(((byte)(211)))));
             this.label15.Location = new System.Drawing.Point(634, 127);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(155, 21);
@@ -542,30 +544,30 @@ namespace University_Management_System_2
             // 
             // Course_DGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Course_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Course_DGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Course_DGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Course_DGV.BackgroundColor = System.Drawing.Color.White;
             this.Course_DGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Course_DGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Course_DGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Course_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Course_DGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.Course_DGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DeepPink;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Course_DGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Course_DGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.Course_DGV.EnableHeadersVisualStyles = false;
             this.Course_DGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Course_DGV.Location = new System.Drawing.Point(244, 297);
@@ -608,12 +610,52 @@ namespace University_Management_System_2
             this.C_FacIdCb.TabIndex = 70;
             this.C_FacIdCb.SelectionChangeCommitted += new System.EventHandler(this.C_FacIdCb_SelectionChangeCommitted);
             // 
+            // MinimizeBtn
+            // 
+            this.MinimizeBtn.BorderRadius = 7;
+            this.MinimizeBtn.CheckedState.Parent = this.MinimizeBtn;
+            this.MinimizeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MinimizeBtn.CustomImages.Parent = this.MinimizeBtn;
+            this.MinimizeBtn.FillColor = System.Drawing.SystemColors.Control;
+            this.MinimizeBtn.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinimizeBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.MinimizeBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
+            this.MinimizeBtn.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.MinimizeBtn.HoverState.Parent = this.MinimizeBtn;
+            this.MinimizeBtn.Location = new System.Drawing.Point(992, 12);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.ShadowDecoration.Parent = this.MinimizeBtn;
+            this.MinimizeBtn.Size = new System.Drawing.Size(30, 30);
+            this.MinimizeBtn.TabIndex = 135;
+            this.MinimizeBtn.Text = "--";
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BorderRadius = 7;
+            this.CloseBtn.CheckedState.Parent = this.CloseBtn;
+            this.CloseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseBtn.CustomImages.Parent = this.CloseBtn;
+            this.CloseBtn.FillColor = System.Drawing.SystemColors.Control;
+            this.CloseBtn.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CloseBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
+            this.CloseBtn.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CloseBtn.HoverState.Parent = this.CloseBtn;
+            this.CloseBtn.Location = new System.Drawing.Point(1028, 12);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.ShadowDecoration.Parent = this.CloseBtn;
+            this.CloseBtn.Size = new System.Drawing.Size(30, 30);
+            this.CloseBtn.TabIndex = 136;
+            this.CloseBtn.Text = "X";
+            // 
             // Courses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1070, 652);
+            this.Controls.Add(this.MinimizeBtn);
+            this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.Course_DGV);
             this.Controls.Add(this.LogOut_Lbl);
             this.Controls.Add(this.Camp_Lbl);
@@ -717,5 +759,7 @@ namespace University_Management_System_2
         private System.Windows.Forms.Label Home_Lbl;
         private Guna.UI2.WinForms.Guna2DataGridView Course_DGV;
         private System.Windows.Forms.ComboBox C_FacIdCb;
+        private Guna.UI2.WinForms.Guna2TileButton MinimizeBtn;
+        private Guna.UI2.WinForms.Guna2TileButton CloseBtn;
     }
 }

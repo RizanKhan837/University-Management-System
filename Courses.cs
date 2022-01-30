@@ -281,7 +281,7 @@ namespace University_Management_System_2
 
         private void Home_Lbl_Click(object sender, EventArgs e)
         {
-            BackGround home = new BackGround();
+            Home home = new Home();
             this.Hide();
             home.Show();
         }
