@@ -31,9 +31,9 @@ namespace University_Management_System_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fees));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.ResetBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.PayBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -379,6 +379,7 @@ namespace University_Management_System_2
             // LogOut_Lbl
             // 
             this.LogOut_Lbl.AutoSize = true;
+            this.LogOut_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogOut_Lbl.Location = new System.Drawing.Point(100, 612);
             this.LogOut_Lbl.Name = "LogOut_Lbl";
@@ -389,6 +390,7 @@ namespace University_Management_System_2
             // Camp_Lbl
             // 
             this.Camp_Lbl.AutoSize = true;
+            this.Camp_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Camp_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Camp_Lbl.Location = new System.Drawing.Point(99, 545);
             this.Camp_Lbl.Name = "Camp_Lbl";
@@ -400,6 +402,7 @@ namespace University_Management_System_2
             // Sal_Lbl
             // 
             this.Sal_Lbl.AutoSize = true;
+            this.Sal_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sal_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sal_Lbl.Location = new System.Drawing.Point(97, 479);
             this.Sal_Lbl.Name = "Sal_Lbl";
@@ -421,6 +424,7 @@ namespace University_Management_System_2
             // Course_Lbl
             // 
             this.Course_Lbl.AutoSize = true;
+            this.Course_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Course_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Course_Lbl.Location = new System.Drawing.Point(98, 351);
             this.Course_Lbl.Name = "Course_Lbl";
@@ -432,6 +436,7 @@ namespace University_Management_System_2
             // Fac_Lbl
             // 
             this.Fac_Lbl.AutoSize = true;
+            this.Fac_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Fac_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fac_Lbl.Location = new System.Drawing.Point(98, 296);
             this.Fac_Lbl.Name = "Fac_Lbl";
@@ -443,6 +448,7 @@ namespace University_Management_System_2
             // Dept_Lbl
             // 
             this.Dept_Lbl.AutoSize = true;
+            this.Dept_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Dept_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dept_Lbl.Location = new System.Drawing.Point(98, 236);
             this.Dept_Lbl.Name = "Dept_Lbl";
@@ -454,6 +460,7 @@ namespace University_Management_System_2
             // Student_Lbl
             // 
             this.Student_Lbl.AutoSize = true;
+            this.Student_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Student_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Student_Lbl.Location = new System.Drawing.Point(98, 178);
             this.Student_Lbl.Name = "Student_Lbl";
@@ -465,6 +472,7 @@ namespace University_Management_System_2
             // Home_Lbl
             // 
             this.Home_Lbl.AutoSize = true;
+            this.Home_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Home_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home_Lbl.Location = new System.Drawing.Point(98, 120);
             this.Home_Lbl.Name = "Home_Lbl";
@@ -475,30 +483,30 @@ namespace University_Management_System_2
             // 
             // FeeDGV
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.FeeDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.FeeDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.FeeDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.FeeDGV.BackgroundColor = System.Drawing.Color.White;
             this.FeeDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.FeeDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.FeeDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FeeDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FeeDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.FeeDGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.DeepPink;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FeeDGV.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.FeeDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.FeeDGV.EnableHeadersVisualStyles = false;
             this.FeeDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.FeeDGV.Location = new System.Drawing.Point(257, 296);

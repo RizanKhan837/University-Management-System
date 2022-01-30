@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace University_Management_System_2
 {
-    public partial class Home : Form
+    public partial class BackGround : Form
     {
-        public Home()
+        public BackGround()
         {
             InitializeComponent();
             Count_Students();
             Count_Department();
             Count_Faculty();
             Count_Campus();
-            SumIncome();
-
+            SumFinances();
+            SumSalary();
         }
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive\University Management System 2\UniversityDataBase.mdf;Integrated Security=True");
 
@@ -61,27 +61,29 @@ namespace University_Management_System_2
             Camp_Num.Text = data.Rows[0][0].ToString();
             Connection.Close();
         }
-        private void SumIncome() 
+        private void SumFinances() 
         {
             Connection.Open();
             SqlDataAdapter adaptor = new SqlDataAdapter("Select Sum(Amount) from FeesTbl", Connection);
             DataTable data = new DataTable();
             adaptor.Fill(data);
-            FeeLbl.Text = "Rs. " +data.Rows[0][0].ToString();
+            FinancesLbl.Text = "Rs. " + data.Rows[0][0].ToString();
             Connection.Close();
         }
-        private void SumFees()
+        private void SumSalary()
         {
             Connection.Open();
-            SqlDataAdapter adaptor = new SqlDataAdapter("Select Sum(Amount) from FeesTbl", Connection);
+            SqlDataAdapter adaptor = new SqlDataAdapter("Select Sum(Salary) from SalaryTbl", Connection);
             DataTable data = new DataTable();
             adaptor.Fill(data);
-            FeeLbl.Text = "Rs. " + data.Rows[0][0].ToString();
+            Salary_Lbl.Text = "Rs. " + data.Rows[0][0].ToString();
             Connection.Close();
         }
         private void Student_Lbl_Click(object sender, EventArgs e)
         {
             Student Std = new Student();
+            this.Hide();
+            Std.Show();
         }
 
         private void Dept_Lbl_Click(object sender, EventArgs e)
@@ -110,6 +112,13 @@ namespace University_Management_System_2
             Campus Camp = new Campus();
             this.Hide();
             Camp.Show();
+        }
+
+        private void FeeLbl_Click(object sender, EventArgs e)
+        {
+            Fees Fee = new Fees();
+            this.Hide();
+            Fee.Show();
         }
     }
 }

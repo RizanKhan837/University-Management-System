@@ -31,9 +31,9 @@ namespace University_Management_System_2
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Student));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DeleteBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.EditBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -172,30 +172,30 @@ namespace University_Management_System_2
             // 
             // StDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.StDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.StDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.StDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StDGV.BackgroundColor = System.Drawing.Color.White;
             this.StDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.StDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.StDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.StDGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DeepPink;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DeepPink;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StDGV.DefaultCellStyle = dataGridViewCellStyle9;
             this.StDGV.EnableHeadersVisualStyles = false;
             this.StDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.StDGV.Location = new System.Drawing.Point(257, 339);
@@ -571,6 +571,7 @@ namespace University_Management_System_2
             // Home_Lbl
             // 
             this.Home_Lbl.AutoSize = true;
+            this.Home_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Home_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home_Lbl.Location = new System.Drawing.Point(98, 121);
             this.Home_Lbl.Name = "Home_Lbl";
@@ -591,6 +592,7 @@ namespace University_Management_System_2
             // Dept_Lbl
             // 
             this.Dept_Lbl.AutoSize = true;
+            this.Dept_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Dept_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dept_Lbl.Location = new System.Drawing.Point(98, 237);
             this.Dept_Lbl.Name = "Dept_Lbl";
@@ -602,6 +604,7 @@ namespace University_Management_System_2
             // Fac_Lbl
             // 
             this.Fac_Lbl.AutoSize = true;
+            this.Fac_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Fac_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fac_Lbl.Location = new System.Drawing.Point(98, 297);
             this.Fac_Lbl.Name = "Fac_Lbl";
@@ -613,6 +616,7 @@ namespace University_Management_System_2
             // Course_Lbl
             // 
             this.Course_Lbl.AutoSize = true;
+            this.Course_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Course_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Course_Lbl.Location = new System.Drawing.Point(98, 352);
             this.Course_Lbl.Name = "Course_Lbl";
@@ -624,26 +628,31 @@ namespace University_Management_System_2
             // FeeLbl
             // 
             this.FeeLbl.AutoSize = true;
+            this.FeeLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FeeLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FeeLbl.Location = new System.Drawing.Point(97, 418);
             this.FeeLbl.Name = "FeeLbl";
             this.FeeLbl.Size = new System.Drawing.Size(47, 21);
             this.FeeLbl.TabIndex = 80;
             this.FeeLbl.Text = "Fees";
+            this.FeeLbl.Click += new System.EventHandler(this.FeeLbl_Click);
             // 
             // Sal_Lbl
             // 
             this.Sal_Lbl.AutoSize = true;
+            this.Sal_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sal_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sal_Lbl.Location = new System.Drawing.Point(97, 480);
             this.Sal_Lbl.Name = "Sal_Lbl";
             this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
             this.Sal_Lbl.TabIndex = 81;
             this.Sal_Lbl.Text = "Salary";
+            this.Sal_Lbl.Click += new System.EventHandler(this.Sal_Lbl_Click);
             // 
             // Camp_Lbl
             // 
             this.Camp_Lbl.AutoSize = true;
+            this.Camp_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Camp_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Camp_Lbl.Location = new System.Drawing.Point(99, 546);
             this.Camp_Lbl.Name = "Camp_Lbl";
@@ -655,6 +664,7 @@ namespace University_Management_System_2
             // LogOut_Lbl
             // 
             this.LogOut_Lbl.AutoSize = true;
+            this.LogOut_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogOut_Lbl.Location = new System.Drawing.Point(100, 613);
             this.LogOut_Lbl.Name = "LogOut_Lbl";

@@ -438,6 +438,7 @@ namespace University_Management_System_2
             // LogOut_Lbl
             // 
             this.LogOut_Lbl.AutoSize = true;
+            this.LogOut_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogOut_Lbl.Location = new System.Drawing.Point(96, 613);
             this.LogOut_Lbl.Name = "LogOut_Lbl";
@@ -448,6 +449,7 @@ namespace University_Management_System_2
             // Camp_Lbl
             // 
             this.Camp_Lbl.AutoSize = true;
+            this.Camp_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Camp_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Camp_Lbl.Location = new System.Drawing.Point(95, 546);
             this.Camp_Lbl.Name = "Camp_Lbl";
@@ -459,22 +461,26 @@ namespace University_Management_System_2
             // Sal_Lbl
             // 
             this.Sal_Lbl.AutoSize = true;
+            this.Sal_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sal_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sal_Lbl.Location = new System.Drawing.Point(93, 480);
             this.Sal_Lbl.Name = "Sal_Lbl";
             this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
             this.Sal_Lbl.TabIndex = 90;
             this.Sal_Lbl.Text = "Salary";
+            this.Sal_Lbl.Click += new System.EventHandler(this.Sal_Lbl_Click);
             // 
             // FeeLbl
             // 
             this.FeeLbl.AutoSize = true;
+            this.FeeLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FeeLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FeeLbl.Location = new System.Drawing.Point(93, 418);
             this.FeeLbl.Name = "FeeLbl";
             this.FeeLbl.Size = new System.Drawing.Size(47, 21);
             this.FeeLbl.TabIndex = 89;
             this.FeeLbl.Text = "Fees";
+            this.FeeLbl.Click += new System.EventHandler(this.FeeLbl_Click);
             // 
             // Course_Lbl
             // 
@@ -489,6 +495,7 @@ namespace University_Management_System_2
             // Fac_Lbl
             // 
             this.Fac_Lbl.AutoSize = true;
+            this.Fac_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Fac_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fac_Lbl.Location = new System.Drawing.Point(94, 297);
             this.Fac_Lbl.Name = "Fac_Lbl";
@@ -500,6 +507,7 @@ namespace University_Management_System_2
             // Dept_Lbl
             // 
             this.Dept_Lbl.AutoSize = true;
+            this.Dept_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Dept_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dept_Lbl.Location = new System.Drawing.Point(94, 237);
             this.Dept_Lbl.Name = "Dept_Lbl";
@@ -511,6 +519,7 @@ namespace University_Management_System_2
             // Student_Lbl
             // 
             this.Student_Lbl.AutoSize = true;
+            this.Student_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Student_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Student_Lbl.Location = new System.Drawing.Point(94, 179);
             this.Student_Lbl.Name = "Student_Lbl";
@@ -522,12 +531,14 @@ namespace University_Management_System_2
             // Home_Lbl
             // 
             this.Home_Lbl.AutoSize = true;
+            this.Home_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Home_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home_Lbl.Location = new System.Drawing.Point(94, 121);
             this.Home_Lbl.Name = "Home_Lbl";
             this.Home_Lbl.Size = new System.Drawing.Size(58, 21);
             this.Home_Lbl.TabIndex = 85;
             this.Home_Lbl.Text = "Home";
+            this.Home_Lbl.Click += new System.EventHandler(this.Home_Lbl_Click);
             // 
             // Course_DGV
             // 

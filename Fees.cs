@@ -39,7 +39,7 @@ namespace University_Management_System_2
                 MessageBox.Show(e.Message, "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        private void GetStudentName()
+        private void GetStudentInfo()
         {
             try
             {
@@ -91,7 +91,7 @@ namespace University_Management_System_2
 
         private void StIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            GetStudentName();
+            GetStudentInfo();
         }
 
         private void PayBtn_Click(object sender, EventArgs e)
@@ -177,7 +177,7 @@ namespace University_Management_System_2
 
         private void Home_Lbl_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
+            BackGround home = new BackGround();
             this.Hide();
             home.Show();
 

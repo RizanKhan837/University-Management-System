@@ -229,5 +229,40 @@ namespace University_Management_System_2
                 Reset();
             }
         }
+
+        private void Home_Lbl_Click(object sender, EventArgs e)
+        {
+            BackGround home = new BackGround();
+            this.Hide();
+            home.Show();
+        }
+
+        private void Course_Lbl_Click(object sender, EventArgs e)
+        {
+            Courses Course = new Courses();
+            this.Hide();
+            Course.Show();
+        }
+
+        private void FeeLbl_Click(object sender, EventArgs e)
+        {
+            Fees Fee = new Fees();
+            this.Hide();
+            Fee.Show();
+        }
+
+        private void Sal_Lbl_Click(object sender, EventArgs e)
+        {
+            Salaries Sal = new Salaries();
+            this.Hide();
+            Sal.Show();
+        }
+
+        private void Camp_Lbl_Click(object sender, EventArgs e)
+        {
+            Campus Camp = new Campus();
+            this.Hide();
+            Camp.Show();
+        }
     }
 }
