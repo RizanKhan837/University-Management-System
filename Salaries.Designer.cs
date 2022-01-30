@@ -557,6 +557,7 @@ namespace University_Management_System_2
             this.MinimizeBtn.Size = new System.Drawing.Size(30, 30);
             this.MinimizeBtn.TabIndex = 211;
             this.MinimizeBtn.Text = "--";
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
             // CloseBtn
             // 
@@ -576,6 +577,7 @@ namespace University_Management_System_2
             this.CloseBtn.Size = new System.Drawing.Size(30, 30);
             this.CloseBtn.TabIndex = 212;
             this.CloseBtn.Text = "X";
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // Salaries
             // 

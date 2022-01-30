@@ -43,6 +43,10 @@ namespace University_Management_System_2
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.SPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.Salary_Lbl = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.FinancesLbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -73,10 +77,6 @@ namespace University_Management_System_2
             this.Student_Lbl = new System.Windows.Forms.Label();
             this.Home_Lbl = new System.Windows.Forms.Label();
             this.FPanel = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.Salary_Lbl = new System.Windows.Forms.Label();
-            this.SPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
@@ -90,6 +90,8 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.SPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -98,8 +100,6 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.FPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.SPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -214,6 +214,57 @@ namespace University_Management_System_2
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this.SPanel;
+            // 
+            // SPanel
+            // 
+            this.SPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.SPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SPanel.BackgroundImage")));
+            this.SPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SPanel.BorderColor = System.Drawing.Color.Transparent;
+            this.SPanel.BorderRadius = 3;
+            this.SPanel.BorderThickness = 1;
+            this.SPanel.Controls.Add(this.Salary_Lbl);
+            this.SPanel.Controls.Add(this.pictureBox15);
+            this.SPanel.Controls.Add(this.label20);
+            this.SPanel.Location = new System.Drawing.Point(524, 458);
+            this.SPanel.Name = "SPanel";
+            this.SPanel.ShowBorders = true;
+            this.SPanel.Size = new System.Drawing.Size(289, 136);
+            this.SPanel.TabIndex = 37;
+            // 
+            // Salary_Lbl
+            // 
+            this.Salary_Lbl.AutoSize = true;
+            this.Salary_Lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Salary_Lbl.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Salary_Lbl.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Salary_Lbl.Location = new System.Drawing.Point(110, 62);
+            this.Salary_Lbl.Name = "Salary_Lbl";
+            this.Salary_Lbl.Size = new System.Drawing.Size(59, 25);
+            this.Salary_Lbl.TabIndex = 2;
+            this.Salary_Lbl.Text = "Num";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(33, 46);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 1;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(119, 23);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(73, 21);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "Salaries";
             // 
             // FinancesLbl
             // 
@@ -589,57 +640,6 @@ namespace University_Management_System_2
             this.FPanel.Size = new System.Drawing.Size(289, 136);
             this.FPanel.TabIndex = 36;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(119, 23);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(73, 21);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "Salaries";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(33, 46);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 1;
-            this.pictureBox15.TabStop = false;
-            // 
-            // Salary_Lbl
-            // 
-            this.Salary_Lbl.AutoSize = true;
-            this.Salary_Lbl.BackColor = System.Drawing.Color.Transparent;
-            this.Salary_Lbl.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salary_Lbl.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Salary_Lbl.Location = new System.Drawing.Point(110, 62);
-            this.Salary_Lbl.Name = "Salary_Lbl";
-            this.Salary_Lbl.Size = new System.Drawing.Size(59, 25);
-            this.Salary_Lbl.TabIndex = 2;
-            this.Salary_Lbl.Text = "Num";
-            // 
-            // SPanel
-            // 
-            this.SPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.SPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SPanel.BackgroundImage")));
-            this.SPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SPanel.BorderColor = System.Drawing.Color.Transparent;
-            this.SPanel.BorderRadius = 3;
-            this.SPanel.BorderThickness = 1;
-            this.SPanel.Controls.Add(this.Salary_Lbl);
-            this.SPanel.Controls.Add(this.pictureBox15);
-            this.SPanel.Controls.Add(this.label20);
-            this.SPanel.Location = new System.Drawing.Point(524, 458);
-            this.SPanel.Name = "SPanel";
-            this.SPanel.ShowBorders = true;
-            this.SPanel.Size = new System.Drawing.Size(289, 136);
-            this.SPanel.TabIndex = 37;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
@@ -666,6 +666,7 @@ namespace University_Management_System_2
             this.MinimizeBtn.Size = new System.Drawing.Size(30, 30);
             this.MinimizeBtn.TabIndex = 135;
             this.MinimizeBtn.Text = "--";
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
             // CloseBtn
             // 
@@ -685,6 +686,7 @@ namespace University_Management_System_2
             this.CloseBtn.Size = new System.Drawing.Size(30, 30);
             this.CloseBtn.TabIndex = 136;
             this.CloseBtn.Text = "X";
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // Home
             // 
@@ -735,6 +737,9 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.SPanel.ResumeLayout(false);
+            this.SPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
@@ -745,9 +750,6 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.FPanel.ResumeLayout(false);
             this.FPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.SPanel.ResumeLayout(false);
-            this.SPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
