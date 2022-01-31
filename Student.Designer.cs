@@ -51,6 +51,7 @@ namespace University_Management_System_2
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -79,7 +80,6 @@ namespace University_Management_System_2
             this.Sal_Lbl = new System.Windows.Forms.Label();
             this.Camp_Lbl = new System.Windows.Forms.Label();
             this.LogOut_Lbl = new System.Windows.Forms.Label();
-            this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
             ((System.ComponentModel.ISupportInitialize)(this.StDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -113,7 +113,7 @@ namespace University_Management_System_2
             this.DeleteBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.DeleteBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.DeleteBtn.Location = new System.Drawing.Point(785, 257);
-            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.DeleteBtn.Margin = new System.Windows.Forms.Padding(5);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(129, 40);
             this.DeleteBtn.TabIndex = 73;
@@ -139,7 +139,7 @@ namespace University_Management_System_2
             this.EditBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.EditBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.EditBtn.Location = new System.Drawing.Point(578, 257);
-            this.EditBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.EditBtn.Margin = new System.Windows.Forms.Padding(5);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(129, 40);
             this.EditBtn.TabIndex = 72;
@@ -165,7 +165,7 @@ namespace University_Management_System_2
             this.SaveBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.SaveBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(188)))), ((int)(((byte)(249)))));
             this.SaveBtn.Location = new System.Drawing.Point(371, 257);
-            this.SaveBtn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(5);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(129, 40);
             this.SaveBtn.TabIndex = 71;
@@ -364,6 +364,26 @@ namespace University_Management_System_2
             // 
             this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this.CloseBtn;
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BorderRadius = 7;
+            this.CloseBtn.CheckedState.Parent = this.CloseBtn;
+            this.CloseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseBtn.CustomImages.Parent = this.CloseBtn;
+            this.CloseBtn.FillColor = System.Drawing.SystemColors.Control;
+            this.CloseBtn.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CloseBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
+            this.CloseBtn.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CloseBtn.HoverState.Parent = this.CloseBtn;
+            this.CloseBtn.Location = new System.Drawing.Point(1029, 12);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.ShadowDecoration.Parent = this.CloseBtn;
+            this.CloseBtn.Size = new System.Drawing.Size(30, 30);
+            this.CloseBtn.TabIndex = 85;
+            this.CloseBtn.Text = "X";
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // pictureBox10
             // 
@@ -673,26 +693,7 @@ namespace University_Management_System_2
             this.LogOut_Lbl.Size = new System.Drawing.Size(66, 21);
             this.LogOut_Lbl.TabIndex = 83;
             this.LogOut_Lbl.Text = "Logout";
-            // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BorderRadius = 7;
-            this.CloseBtn.CheckedState.Parent = this.CloseBtn;
-            this.CloseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CloseBtn.CustomImages.Parent = this.CloseBtn;
-            this.CloseBtn.FillColor = System.Drawing.SystemColors.Control;
-            this.CloseBtn.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CloseBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.CloseBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(255)))), ((int)(((byte)(245)))));
-            this.CloseBtn.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.CloseBtn.HoverState.Parent = this.CloseBtn;
-            this.CloseBtn.Location = new System.Drawing.Point(1029, 12);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.ShadowDecoration.Parent = this.CloseBtn;
-            this.CloseBtn.Size = new System.Drawing.Size(30, 30);
-            this.CloseBtn.TabIndex = 85;
-            this.CloseBtn.Text = "X";
-            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
+            this.LogOut_Lbl.Click += new System.EventHandler(this.LogOut_Lbl_Click);
             // 
             // MinimizeBtn
             // 

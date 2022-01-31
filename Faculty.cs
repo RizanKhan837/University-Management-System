@@ -274,5 +274,12 @@ namespace University_Management_System_2
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void LogOut_Lbl_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            this.Hide();
+            log.Show();
+        }
     }
 }

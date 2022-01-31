@@ -212,8 +212,8 @@ namespace University_Management_System_2
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 30;
-            this.bunifuElipse1.TargetControl = this.SPanel;
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this.FPanel;
             // 
             // SPanel
             // 
@@ -529,6 +529,7 @@ namespace University_Management_System_2
             this.LogOut_Lbl.Size = new System.Drawing.Size(66, 21);
             this.LogOut_Lbl.TabIndex = 34;
             this.LogOut_Lbl.Text = "Logout";
+            this.LogOut_Lbl.Click += new System.EventHandler(this.LogOut_Lbl_Click);
             // 
             // Camp_Lbl
             // 
