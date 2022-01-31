@@ -278,5 +278,12 @@ namespace University_Management_System_2
             this.Hide();
             log.Show();
         }
+
+        private void Home_Lbl_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Hide();
+            home.Show();
+        }
     }
 }

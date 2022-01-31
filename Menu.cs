@@ -137,5 +137,12 @@ namespace University_Management_System_2
             this.Hide();
             log.Show();
         }
+
+        private void Sal_Lbl_Click(object sender, EventArgs e)
+        {
+            Salaries Sal = new Salaries();
+            this.Hide();
+            Sal.Show();
+        }
     }
 }

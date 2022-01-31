@@ -198,5 +198,26 @@ namespace University_Management_System_2
             this.Hide();
             log.Show();
         }
+
+        private void Sal_Lbl_Click(object sender, EventArgs e)
+        {
+            Salaries Sal = new Salaries();
+            this.Hide();
+            Sal.Show();
+        }
+
+        private void FeeLbl_Click(object sender, EventArgs e)
+        {
+            Fees Fee = new Fees();
+            this.Hide();
+            Fee.Show();
+        }
+
+        private void Home_Lbl_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.Hide();
+            home.Show();
+        }
     }
 }

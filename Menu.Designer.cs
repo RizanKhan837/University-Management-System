@@ -43,13 +43,14 @@ namespace University_Management_System_2
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.FPanel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.FinancesLbl = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.SPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.Salary_Lbl = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.FinancesLbl = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.Panel2 = new System.Windows.Forms.Panel();
             this.Faculty_Lbl = new System.Windows.Forms.Label();
             this.Camp_Num = new System.Windows.Forms.Label();
@@ -76,7 +77,6 @@ namespace University_Management_System_2
             this.Dept_Lbl = new System.Windows.Forms.Label();
             this.Student_Lbl = new System.Windows.Forms.Label();
             this.Home_Lbl = new System.Windows.Forms.Label();
-            this.FPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
@@ -90,16 +90,16 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.FPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            this.FPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -212,8 +212,59 @@ namespace University_Management_System_2
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this.FPanel;
+            this.bunifuElipse1.ElipseRadius = 30;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // FPanel
+            // 
+            this.FPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
+            this.FPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FPanel.BackgroundImage")));
+            this.FPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FPanel.BorderColor = System.Drawing.Color.Transparent;
+            this.FPanel.BorderRadius = 3;
+            this.FPanel.BorderThickness = 1;
+            this.FPanel.Controls.Add(this.FinancesLbl);
+            this.FPanel.Controls.Add(this.pictureBox14);
+            this.FPanel.Controls.Add(this.label19);
+            this.FPanel.Location = new System.Drawing.Point(220, 458);
+            this.FPanel.Name = "FPanel";
+            this.FPanel.ShowBorders = true;
+            this.FPanel.Size = new System.Drawing.Size(289, 136);
+            this.FPanel.TabIndex = 36;
+            // 
+            // FinancesLbl
+            // 
+            this.FinancesLbl.AutoSize = true;
+            this.FinancesLbl.BackColor = System.Drawing.Color.Transparent;
+            this.FinancesLbl.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FinancesLbl.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.FinancesLbl.Location = new System.Drawing.Point(98, 64);
+            this.FinancesLbl.Name = "FinancesLbl";
+            this.FinancesLbl.Size = new System.Drawing.Size(59, 25);
+            this.FinancesLbl.TabIndex = 2;
+            this.FinancesLbl.Text = "Num";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(25, 48);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(55, 50);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 1;
+            this.pictureBox14.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(113, 25);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(82, 21);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Finances";
             // 
             // SPanel
             // 
@@ -265,40 +316,6 @@ namespace University_Management_System_2
             this.label20.Size = new System.Drawing.Size(73, 21);
             this.label20.TabIndex = 2;
             this.label20.Text = "Salaries";
-            // 
-            // FinancesLbl
-            // 
-            this.FinancesLbl.AutoSize = true;
-            this.FinancesLbl.BackColor = System.Drawing.Color.Transparent;
-            this.FinancesLbl.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FinancesLbl.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.FinancesLbl.Location = new System.Drawing.Point(98, 64);
-            this.FinancesLbl.Name = "FinancesLbl";
-            this.FinancesLbl.Size = new System.Drawing.Size(59, 25);
-            this.FinancesLbl.TabIndex = 2;
-            this.FinancesLbl.Text = "Num";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(25, 48);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 1;
-            this.pictureBox14.TabStop = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(113, 25);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(82, 21);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Finances";
             // 
             // Panel2
             // 
@@ -553,6 +570,7 @@ namespace University_Management_System_2
             this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
             this.Sal_Lbl.TabIndex = 32;
             this.Sal_Lbl.Text = "Salary";
+            this.Sal_Lbl.Click += new System.EventHandler(this.Sal_Lbl_Click);
             // 
             // FeeLbl
             // 
@@ -623,23 +641,6 @@ namespace University_Management_System_2
             this.Home_Lbl.Size = new System.Drawing.Size(58, 21);
             this.Home_Lbl.TabIndex = 27;
             this.Home_Lbl.Text = "Home";
-            // 
-            // FPanel
-            // 
-            this.FPanel.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
-            this.FPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FPanel.BackgroundImage")));
-            this.FPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FPanel.BorderColor = System.Drawing.Color.Transparent;
-            this.FPanel.BorderRadius = 3;
-            this.FPanel.BorderThickness = 1;
-            this.FPanel.Controls.Add(this.FinancesLbl);
-            this.FPanel.Controls.Add(this.pictureBox14);
-            this.FPanel.Controls.Add(this.label19);
-            this.FPanel.Location = new System.Drawing.Point(220, 458);
-            this.FPanel.Name = "FPanel";
-            this.FPanel.ShowBorders = true;
-            this.FPanel.Size = new System.Drawing.Size(289, 136);
-            this.FPanel.TabIndex = 36;
             // 
             // panel3
             // 
@@ -738,10 +739,12 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.FPanel.ResumeLayout(false);
+            this.FPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.SPanel.ResumeLayout(false);
             this.SPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.Panel2.ResumeLayout(false);
             this.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
@@ -749,8 +752,6 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            this.FPanel.ResumeLayout(false);
-            this.FPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
