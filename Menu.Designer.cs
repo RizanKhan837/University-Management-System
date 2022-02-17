@@ -42,7 +42,7 @@ namespace University_Management_System_2
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.BunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.FPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.FinancesLbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -210,10 +210,10 @@ namespace University_Management_System_2
             this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
-            // bunifuElipse1
+            // BunifuElipse
             // 
-            this.bunifuElipse1.ElipseRadius = 30;
-            this.bunifuElipse1.TargetControl = this;
+            this.BunifuElipse.ElipseRadius = 20;
+            this.BunifuElipse.TargetControl = this.FPanel;
             // 
             // FPanel
             // 
@@ -221,7 +221,7 @@ namespace University_Management_System_2
             this.FPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("FPanel.BackgroundImage")));
             this.FPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FPanel.BorderColor = System.Drawing.Color.Transparent;
-            this.FPanel.BorderRadius = 3;
+            this.FPanel.BorderRadius = 20;
             this.FPanel.BorderThickness = 1;
             this.FPanel.Controls.Add(this.FinancesLbl);
             this.FPanel.Controls.Add(this.pictureBox14);
@@ -272,7 +272,7 @@ namespace University_Management_System_2
             this.SPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SPanel.BackgroundImage")));
             this.SPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SPanel.BorderColor = System.Drawing.Color.Transparent;
-            this.SPanel.BorderRadius = 3;
+            this.SPanel.BorderRadius = 20;
             this.SPanel.BorderThickness = 1;
             this.SPanel.Controls.Add(this.Salary_Lbl);
             this.SPanel.Controls.Add(this.pictureBox15);
@@ -770,7 +770,7 @@ namespace University_Management_System_2
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse BunifuElipse;
         private System.Windows.Forms.Panel Panel2;
         private System.Windows.Forms.Label Faculty_Lbl;
         private System.Windows.Forms.Label Camp_Num;

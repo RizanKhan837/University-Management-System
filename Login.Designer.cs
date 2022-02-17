@@ -32,16 +32,17 @@ namespace University_Management_System_2
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.ShowPassBtn = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.LoginBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -53,14 +54,11 @@ namespace University_Management_System_2
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +70,6 @@ namespace University_Management_System_2
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.bunifuLabel9);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel5);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel4);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel3);
@@ -86,33 +83,17 @@ namespace University_Management_System_2
             this.bunifuPanel1.Size = new System.Drawing.Size(300, 530);
             this.bunifuPanel1.TabIndex = 0;
             // 
-            // bunifuLabel9
-            // 
-            this.bunifuLabel9.AllowParentOverrides = false;
-            this.bunifuLabel9.AutoEllipsis = false;
-            this.bunifuLabel9.CursorType = null;
-            this.bunifuLabel9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel9.Location = new System.Drawing.Point(97, 491);
-            this.bunifuLabel9.Name = "bunifuLabel9";
-            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(93, 17);
-            this.bunifuLabel9.TabIndex = 1;
-            this.bunifuLabel9.Text = "Abdul Hannan";
-            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // bunifuLabel5
             // 
             this.bunifuLabel5.AllowParentOverrides = false;
             this.bunifuLabel5.AutoEllipsis = false;
             this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel5.Location = new System.Drawing.Point(97, 468);
+            this.bunifuLabel5.Location = new System.Drawing.Point(76, 471);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(92, 17);
+            this.bunifuLabel5.Size = new System.Drawing.Size(111, 21);
             this.bunifuLabel5.TabIndex = 1;
             this.bunifuLabel5.Text = "Rizwan Akram";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -123,12 +104,12 @@ namespace University_Management_System_2
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
             this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel4.Location = new System.Drawing.Point(101, 446);
+            this.bunifuLabel4.Location = new System.Drawing.Point(76, 446);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(77, 16);
+            this.bunifuLabel4.Size = new System.Drawing.Size(91, 19);
             this.bunifuLabel4.TabIndex = 1;
             this.bunifuLabel4.Text = "Develep By:";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -139,12 +120,12 @@ namespace University_Management_System_2
             this.bunifuLabel3.AllowParentOverrides = false;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel3.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel3.Location = new System.Drawing.Point(107, 240);
+            this.bunifuLabel3.Location = new System.Drawing.Point(93, 242);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(71, 24);
+            this.bunifuLabel3.Size = new System.Drawing.Size(78, 27);
             this.bunifuLabel3.TabIndex = 1;
             this.bunifuLabel3.Text = "System";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -155,12 +136,12 @@ namespace University_Management_System_2
             this.bunifuLabel2.AllowParentOverrides = false;
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel2.Location = new System.Drawing.Point(28, 210);
+            this.bunifuLabel2.Location = new System.Drawing.Point(14, 212);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(240, 24);
+            this.bunifuLabel2.Size = new System.Drawing.Size(273, 27);
             this.bunifuLabel2.TabIndex = 1;
             this.bunifuLabel2.Text = "University Management";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -178,18 +159,35 @@ namespace University_Management_System_2
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // bunifuLabel10
+            // 
+            this.bunifuLabel10.AllowParentOverrides = false;
+            this.bunifuLabel10.AutoEllipsis = false;
+            this.bunifuLabel10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel10.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel10.Font = new System.Drawing.Font("Century Gothic", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel10.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.bunifuLabel10.Location = new System.Drawing.Point(49, 182);
+            this.bunifuLabel10.Name = "bunifuLabel10";
+            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel10.Size = new System.Drawing.Size(189, 27);
+            this.bunifuLabel10.TabIndex = 1;
+            this.bunifuLabel10.Text = "Welcome To The";
+            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel1.Location = new System.Drawing.Point(28, 132);
+            this.bunifuLabel1.Location = new System.Drawing.Point(28, 133);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(230, 24);
+            this.bunifuLabel1.Size = new System.Drawing.Size(291, 33);
             this.bunifuLabel1.TabIndex = 1;
             this.bunifuLabel1.Text = "Login To Your Account";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -203,14 +201,16 @@ namespace University_Management_System_2
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.PasswordTb);
+            this.bunifuPanel2.Controls.Add(this.guna2PictureBox3);
             this.bunifuPanel2.Controls.Add(this.ShowPassBtn);
             this.bunifuPanel2.Controls.Add(this.linkLabel1);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel6);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel8);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel7);
+            this.bunifuPanel2.Controls.Add(this.guna2Panel1);
             this.bunifuPanel2.Controls.Add(this.LoginBtn);
             this.bunifuPanel2.Controls.Add(this.guna2Panel2);
-            this.bunifuPanel2.Controls.Add(this.guna2Panel1);
             this.bunifuPanel2.Controls.Add(this.CloseBtn);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -227,7 +227,7 @@ namespace University_Management_System_2
             this.ShowPassBtn.FlatAppearance.BorderSize = 0;
             this.ShowPassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ShowPassBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(230)))), ((int)(((byte)(193)))));
-            this.ShowPassBtn.Location = new System.Drawing.Point(144, 287);
+            this.ShowPassBtn.Location = new System.Drawing.Point(144, 322);
             this.ShowPassBtn.Name = "ShowPassBtn";
             this.ShowPassBtn.Size = new System.Drawing.Size(119, 34);
             this.ShowPassBtn.TabIndex = 5;
@@ -247,6 +247,22 @@ namespace University_Management_System_2
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "rizankhan837@gmail.com";
+            // 
+            // bunifuLabel6
+            // 
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.CursorType = null;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuLabel6.Location = new System.Drawing.Point(28, 446);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(54, 17);
+            this.bunifuLabel6.TabIndex = 1;
+            this.bunifuLabel6.Text = "Support:";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel8
             // 
@@ -288,7 +304,7 @@ namespace University_Management_System_2
             this.LoginBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.ForeColor = System.Drawing.Color.White;
             this.LoginBtn.HoverState.Parent = this.LoginBtn;
-            this.LoginBtn.Location = new System.Drawing.Point(41, 287);
+            this.LoginBtn.Location = new System.Drawing.Point(41, 322);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.ShadowDecoration.Parent = this.LoginBtn;
             this.LoginBtn.Size = new System.Drawing.Size(97, 34);
@@ -303,7 +319,7 @@ namespace University_Management_System_2
             this.guna2Panel2.Location = new System.Drawing.Point(0, 182);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(450, 38);
+            this.guna2Panel2.Size = new System.Drawing.Size(450, 51);
             this.guna2Panel2.TabIndex = 2;
             // 
             // UserNameTb
@@ -317,15 +333,16 @@ namespace University_Management_System_2
             this.UserNameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.UserNameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UserNameTb.FocusedState.Parent = this.UserNameTb;
+            this.UserNameTb.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UserNameTb.HoverState.Parent = this.UserNameTb;
-            this.UserNameTb.Location = new System.Drawing.Point(41, 5);
+            this.UserNameTb.Location = new System.Drawing.Point(49, 4);
             this.UserNameTb.Name = "UserNameTb";
             this.UserNameTb.PasswordChar = '\0';
             this.UserNameTb.PlaceholderText = "User Name";
             this.UserNameTb.SelectedText = "";
             this.UserNameTb.ShadowDecoration.Parent = this.UserNameTb;
-            this.UserNameTb.Size = new System.Drawing.Size(406, 28);
+            this.UserNameTb.Size = new System.Drawing.Size(398, 43);
             this.UserNameTb.TabIndex = 4;
             // 
             // guna2PictureBox2
@@ -334,19 +351,17 @@ namespace University_Management_System_2
             this.guna2PictureBox2.Location = new System.Drawing.Point(6, 5);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(28, 28);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(38, 42);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 3;
             this.guna2PictureBox2.TabStop = false;
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.PasswordTb);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 226);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 247);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(450, 38);
+            this.guna2Panel1.Size = new System.Drawing.Size(450, 51);
             this.guna2Panel1.TabIndex = 2;
             // 
             // PasswordTb
@@ -360,25 +375,26 @@ namespace University_Management_System_2
             this.PasswordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.PasswordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTb.FocusedState.Parent = this.PasswordTb;
+            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PasswordTb.HoverState.Parent = this.PasswordTb;
-            this.PasswordTb.Location = new System.Drawing.Point(41, 5);
+            this.PasswordTb.Location = new System.Drawing.Point(49, 251);
             this.PasswordTb.Name = "PasswordTb";
             this.PasswordTb.PasswordChar = '\0';
             this.PasswordTb.PlaceholderText = "Password";
             this.PasswordTb.SelectedText = "";
             this.PasswordTb.ShadowDecoration.Parent = this.PasswordTb;
-            this.PasswordTb.Size = new System.Drawing.Size(406, 28);
+            this.PasswordTb.Size = new System.Drawing.Size(398, 43);
             this.PasswordTb.TabIndex = 4;
             this.PasswordTb.UseSystemPasswordChar = true;
             // 
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(6, 5);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(6, 252);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(28, 28);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(38, 42);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 3;
             this.guna2PictureBox3.TabStop = false;
@@ -404,41 +420,8 @@ namespace University_Management_System_2
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 20;
+            this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuLabel6
-            // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuLabel6.Location = new System.Drawing.Point(28, 446);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(54, 17);
-            this.bunifuLabel6.TabIndex = 1;
-            this.bunifuLabel6.Text = "Support:";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel10
-            // 
-            this.bunifuLabel10.AllowParentOverrides = false;
-            this.bunifuLabel10.AutoEllipsis = false;
-            this.bunifuLabel10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel10.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel10.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel10.Location = new System.Drawing.Point(63, 180);
-            this.bunifuLabel10.Name = "bunifuLabel10";
-            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(170, 24);
-            this.bunifuLabel10.TabIndex = 1;
-            this.bunifuLabel10.Text = "Welcome To The";
-            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Login
             // 
@@ -459,7 +442,6 @@ namespace University_Management_System_2
             this.bunifuPanel2.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -484,7 +466,6 @@ namespace University_Management_System_2
         private Guna.UI2.WinForms.Guna2TextBox UserNameTb;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTb;
         private Guna.UI2.WinForms.Guna2Button LoginBtn;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
