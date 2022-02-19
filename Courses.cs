@@ -146,7 +146,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@FacId", C_FacIdCb.SelectedValue.ToString());
                     cmd.Parameters.AddWithValue("@FacName", C_FNameTb.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Course Added", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Course Added");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -209,7 +210,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@FN", C_FNameTb.Text); ;
                     cmd.Parameters.AddWithValue("@CKey", Key); ;
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Course Updated...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Course Updated");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -260,7 +262,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from CourseTbl where Course_Id=@CKey", Connection);
                     cmd.Parameters.AddWithValue("@CKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Student Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Course Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }

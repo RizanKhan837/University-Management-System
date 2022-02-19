@@ -42,7 +42,7 @@ namespace University_Management_System_2
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.BunifuElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.BunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.FPanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.FinancesLbl = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -51,20 +51,6 @@ namespace University_Management_System_2
             this.Salary_Lbl = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.Panel2 = new System.Windows.Forms.Panel();
-            this.Faculty_Lbl = new System.Windows.Forms.Label();
-            this.Camp_Num = new System.Windows.Forms.Label();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.Dept_Num = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Student_Num = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -80,6 +66,20 @@ namespace University_Management_System_2
             this.panel3 = new System.Windows.Forms.Panel();
             this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.Faculty_Lbl = new System.Windows.Forms.Label();
+            this.Camp_Num = new System.Windows.Forms.Label();
+            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Dept_Num = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Student_Num = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -94,12 +94,12 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -210,10 +210,10 @@ namespace University_Management_System_2
             this.pictureBox10.TabIndex = 1;
             this.pictureBox10.TabStop = false;
             // 
-            // BunifuElipse
+            // BunifuElipse2
             // 
-            this.BunifuElipse.ElipseRadius = 20;
-            this.BunifuElipse.TargetControl = this.Panel2;
+            this.BunifuElipse2.ElipseRadius = 30;
+            this.BunifuElipse2.TargetControl = this;
             // 
             // FPanel
             // 
@@ -317,184 +317,6 @@ namespace University_Management_System_2
             this.label20.TabIndex = 2;
             this.label20.Text = "Salaries";
             // 
-            // Panel2
-            // 
-            this.Panel2.BackColor = System.Drawing.Color.Black;
-            this.Panel2.Controls.Add(this.Faculty_Lbl);
-            this.Panel2.Controls.Add(this.Camp_Num);
-            this.Panel2.Controls.Add(this.bunifuPictureBox1);
-            this.Panel2.Controls.Add(this.label17);
-            this.Panel2.Controls.Add(this.Dept_Num);
-            this.Panel2.Controls.Add(this.label15);
-            this.Panel2.Controls.Add(this.label10);
-            this.Panel2.Controls.Add(this.label13);
-            this.Panel2.Controls.Add(this.Student_Num);
-            this.Panel2.Controls.Add(this.label11);
-            this.Panel2.Controls.Add(this.pictureBox13);
-            this.Panel2.Controls.Add(this.pictureBox12);
-            this.Panel2.Controls.Add(this.pictureBox11);
-            this.Panel2.Location = new System.Drawing.Point(830, 72);
-            this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(205, 522);
-            this.Panel2.TabIndex = 3;
-            // 
-            // Faculty_Lbl
-            // 
-            this.Faculty_Lbl.AutoSize = true;
-            this.Faculty_Lbl.BackColor = System.Drawing.Color.Transparent;
-            this.Faculty_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Faculty_Lbl.ForeColor = System.Drawing.Color.White;
-            this.Faculty_Lbl.Location = new System.Drawing.Point(100, 422);
-            this.Faculty_Lbl.Name = "Faculty_Lbl";
-            this.Faculty_Lbl.Size = new System.Drawing.Size(49, 21);
-            this.Faculty_Lbl.TabIndex = 2;
-            this.Faculty_Lbl.Text = "Num";
-            // 
-            // Camp_Num
-            // 
-            this.Camp_Num.AutoSize = true;
-            this.Camp_Num.BackColor = System.Drawing.Color.Black;
-            this.Camp_Num.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Camp_Num.ForeColor = System.Drawing.Color.White;
-            this.Camp_Num.Location = new System.Drawing.Point(104, 320);
-            this.Camp_Num.Name = "Camp_Num";
-            this.Camp_Num.Size = new System.Drawing.Size(49, 21);
-            this.Camp_Num.TabIndex = 2;
-            this.Camp_Num.Text = "Num";
-            // 
-            // bunifuPictureBox1
-            // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BackColor = System.Drawing.Color.White;
-            this.bunifuPictureBox1.BorderRadius = 24;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(25, 87);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(49, 49);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 3;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Black;
-            this.label17.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(84, 393);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(91, 21);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Facultiess";
-            // 
-            // Dept_Num
-            // 
-            this.Dept_Num.AutoSize = true;
-            this.Dept_Num.BackColor = System.Drawing.Color.Black;
-            this.Dept_Num.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dept_Num.ForeColor = System.Drawing.Color.White;
-            this.Dept_Num.Location = new System.Drawing.Point(103, 217);
-            this.Dept_Num.Name = "Dept_Num";
-            this.Dept_Num.Size = new System.Drawing.Size(49, 21);
-            this.Dept_Num.TabIndex = 2;
-            this.Dept_Num.Text = "Num";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Black;
-            this.label15.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(84, 290);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 21);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Campuses";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(49, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 25);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Statistics";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Black;
-            this.label13.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(82, 187);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(113, 21);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Departments";
-            // 
-            // Student_Num
-            // 
-            this.Student_Num.AutoSize = true;
-            this.Student_Num.BackColor = System.Drawing.Color.Black;
-            this.Student_Num.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Student_Num.ForeColor = System.Drawing.Color.White;
-            this.Student_Num.Location = new System.Drawing.Point(101, 114);
-            this.Student_Num.Name = "Student_Num";
-            this.Student_Num.Size = new System.Drawing.Size(49, 21);
-            this.Student_Num.TabIndex = 2;
-            this.Student_Num.Text = "Num";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(84, 84);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 21);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Students";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.White;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(22, 394);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(49, 45);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 1;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.White;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(22, 292);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(49, 45);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 1;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.White;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(22, 189);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(49, 45);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 1;
-            this.pictureBox11.TabStop = false;
-            // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
@@ -541,7 +363,7 @@ namespace University_Management_System_2
             this.LogOut_Lbl.AutoSize = true;
             this.LogOut_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogOut_Lbl.Location = new System.Drawing.Point(76, 610);
+            this.LogOut_Lbl.Location = new System.Drawing.Point(76, 607);
             this.LogOut_Lbl.Name = "LogOut_Lbl";
             this.LogOut_Lbl.Size = new System.Drawing.Size(66, 21);
             this.LogOut_Lbl.TabIndex = 34;
@@ -690,6 +512,191 @@ namespace University_Management_System_2
             this.CloseBtn.Text = "X";
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Black;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 20;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.Faculty_Lbl);
+            this.bunifuPanel1.Controls.Add(this.Camp_Num);
+            this.bunifuPanel1.Controls.Add(this.bunifuPictureBox1);
+            this.bunifuPanel1.Controls.Add(this.label17);
+            this.bunifuPanel1.Controls.Add(this.Dept_Num);
+            this.bunifuPanel1.Controls.Add(this.label15);
+            this.bunifuPanel1.Controls.Add(this.label10);
+            this.bunifuPanel1.Controls.Add(this.label13);
+            this.bunifuPanel1.Controls.Add(this.Student_Num);
+            this.bunifuPanel1.Controls.Add(this.label11);
+            this.bunifuPanel1.Controls.Add(this.pictureBox13);
+            this.bunifuPanel1.Controls.Add(this.pictureBox12);
+            this.bunifuPanel1.Controls.Add(this.pictureBox11);
+            this.bunifuPanel1.Location = new System.Drawing.Point(830, 72);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(205, 522);
+            this.bunifuPanel1.TabIndex = 137;
+            // 
+            // Faculty_Lbl
+            // 
+            this.Faculty_Lbl.AutoSize = true;
+            this.Faculty_Lbl.BackColor = System.Drawing.Color.Transparent;
+            this.Faculty_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Faculty_Lbl.ForeColor = System.Drawing.Color.White;
+            this.Faculty_Lbl.Location = new System.Drawing.Point(99, 439);
+            this.Faculty_Lbl.Name = "Faculty_Lbl";
+            this.Faculty_Lbl.Size = new System.Drawing.Size(49, 21);
+            this.Faculty_Lbl.TabIndex = 7;
+            this.Faculty_Lbl.Text = "Num";
+            // 
+            // Camp_Num
+            // 
+            this.Camp_Num.AutoSize = true;
+            this.Camp_Num.BackColor = System.Drawing.Color.Black;
+            this.Camp_Num.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Camp_Num.ForeColor = System.Drawing.Color.White;
+            this.Camp_Num.Location = new System.Drawing.Point(103, 337);
+            this.Camp_Num.Name = "Camp_Num";
+            this.Camp_Num.Size = new System.Drawing.Size(49, 21);
+            this.Camp_Num.TabIndex = 8;
+            this.Camp_Num.Text = "Num";
+            // 
+            // bunifuPictureBox1
+            // 
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BackColor = System.Drawing.Color.White;
+            this.bunifuPictureBox1.BorderRadius = 24;
+            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(24, 104);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(49, 49);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 16;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(83, 410);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(91, 21);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "Facultiess";
+            // 
+            // Dept_Num
+            // 
+            this.Dept_Num.AutoSize = true;
+            this.Dept_Num.BackColor = System.Drawing.Color.Black;
+            this.Dept_Num.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dept_Num.ForeColor = System.Drawing.Color.White;
+            this.Dept_Num.Location = new System.Drawing.Point(102, 234);
+            this.Dept_Num.Name = "Dept_Num";
+            this.Dept_Num.Size = new System.Drawing.Size(49, 21);
+            this.Dept_Num.TabIndex = 10;
+            this.Dept_Num.Text = "Num";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Black;
+            this.label15.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(83, 307);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 21);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "Campuses";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(53, 31);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 25);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Statistics";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Black;
+            this.label13.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(81, 204);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(113, 21);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Departments";
+            // 
+            // Student_Num
+            // 
+            this.Student_Num.AutoSize = true;
+            this.Student_Num.BackColor = System.Drawing.Color.Black;
+            this.Student_Num.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Student_Num.ForeColor = System.Drawing.Color.White;
+            this.Student_Num.Location = new System.Drawing.Point(100, 131);
+            this.Student_Num.Name = "Student_Num";
+            this.Student_Num.Size = new System.Drawing.Size(49, 21);
+            this.Student_Num.TabIndex = 14;
+            this.Student_Num.Text = "Num";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(83, 101);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 21);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Students";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.White;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(21, 411);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 4;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.White;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(21, 309);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 5;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.White;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(21, 206);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(49, 45);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 6;
+            this.pictureBox11.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,7 +720,6 @@ namespace University_Management_System_2
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.bunifuLabel1);
-            this.Controls.Add(this.Panel2);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -725,6 +731,7 @@ namespace University_Management_System_2
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.bunifuPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -745,13 +752,13 @@ namespace University_Management_System_2
             this.SPanel.ResumeLayout(false);
             this.SPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.Panel2.ResumeLayout(false);
-            this.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -770,21 +777,7 @@ namespace University_Management_System_2
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private Bunifu.Framework.UI.BunifuElipse BunifuElipse;
-        private System.Windows.Forms.Panel Panel2;
-        private System.Windows.Forms.Label Faculty_Lbl;
-        private System.Windows.Forms.Label Camp_Num;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label Dept_Num;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label Student_Num;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private Bunifu.Framework.UI.BunifuElipse BunifuElipse2;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label label19;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
@@ -808,6 +801,20 @@ namespace University_Management_System_2
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2TileButton MinimizeBtn;
         private Guna.UI2.WinForms.Guna2TileButton CloseBtn;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private System.Windows.Forms.Label Faculty_Lbl;
+        private System.Windows.Forms.Label Camp_Num;
+        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label Dept_Num;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label Student_Num;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }
 

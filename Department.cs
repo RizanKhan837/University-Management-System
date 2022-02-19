@@ -58,7 +58,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@DI", DeptIntakeTb.Text);
                     cmd.Parameters.AddWithValue("@DF", DeptFeesTb.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Department Added", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Department Added");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -112,7 +113,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@DF", DeptFeesTb.Text);
                     cmd.Parameters.AddWithValue("@DKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Department Updated...","University Management System",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Department Updated");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -138,7 +140,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from DepartmentTbl where DeptId=@DKey", Connection);
                     cmd.Parameters.AddWithValue("@DKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Department Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Department Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }

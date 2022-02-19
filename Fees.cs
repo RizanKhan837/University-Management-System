@@ -113,7 +113,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@Sem", SemesterCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@Date", DateTime.Today.Date);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Fee Paid", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Fee Paid");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -139,7 +140,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from FeesTbl where Fee_Id=@FKey",Connection);
                     cmd.Parameters.AddWithValue("@FKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Student Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Record Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }

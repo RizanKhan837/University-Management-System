@@ -121,7 +121,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@SPh", St_PhoneTb.Text);
                     cmd.Parameters.AddWithValue("@Sem", St_SemesterCb.SelectedItem.ToString()); ;
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Student Added", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Student Added");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -147,7 +148,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from StudentTbl where StId=@StKey", Connection);
                     cmd.Parameters.AddWithValue("@StKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Student Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Student Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -208,7 +210,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@Sem", St_SemesterCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@SKey", Key); ;
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Student Updated...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Student Updated");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }

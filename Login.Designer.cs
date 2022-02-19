@@ -52,8 +52,8 @@ namespace University_Management_System_2
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.UserNameTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
@@ -79,7 +79,7 @@ namespace University_Management_System_2
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.ShowBorders = false;
             this.bunifuPanel1.Size = new System.Drawing.Size(300, 530);
             this.bunifuPanel1.TabIndex = 0;
             // 
@@ -90,7 +90,7 @@ namespace University_Management_System_2
             this.bunifuLabel5.CursorType = null;
             this.bunifuLabel5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.bunifuLabel5.Location = new System.Drawing.Point(76, 471);
+            this.bunifuLabel5.Location = new System.Drawing.Point(66, 471);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(111, 21);
@@ -201,6 +201,7 @@ namespace University_Management_System_2
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.CloseBtn);
             this.bunifuPanel2.Controls.Add(this.PasswordTb);
             this.bunifuPanel2.Controls.Add(this.guna2PictureBox3);
             this.bunifuPanel2.Controls.Add(this.ShowPassBtn);
@@ -211,13 +212,12 @@ namespace University_Management_System_2
             this.bunifuPanel2.Controls.Add(this.guna2Panel1);
             this.bunifuPanel2.Controls.Add(this.LoginBtn);
             this.bunifuPanel2.Controls.Add(this.guna2Panel2);
-            this.bunifuPanel2.Controls.Add(this.CloseBtn);
             this.bunifuPanel2.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuPanel2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel2.Location = new System.Drawing.Point(300, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.ShowBorders = false;
             this.bunifuPanel2.Size = new System.Drawing.Size(450, 530);
             this.bunifuPanel2.TabIndex = 1;
             // 
@@ -279,10 +279,11 @@ namespace University_Management_System_2
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(214)))), ((int)(((byte)(223)))));
             this.linkLabel1.Location = new System.Drawing.Point(109, 490);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(173, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(183, 17);
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "rizankhan837@gmail.com";
+            this.linkLabel1.Text = "https://www.rizankhan.me";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // bunifuLabel6
             // 
@@ -291,7 +292,7 @@ namespace University_Management_System_2
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuLabel6.Location = new System.Drawing.Point(28, 446);
+            this.bunifuLabel6.Location = new System.Drawing.Point(28, 445);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(54, 17);
@@ -342,6 +343,7 @@ namespace University_Management_System_2
             // 
             // LoginBtn
             // 
+            this.LoginBtn.BorderRadius = 8;
             this.LoginBtn.CheckedState.Parent = this.LoginBtn;
             this.LoginBtn.CustomImages.Parent = this.LoginBtn;
             this.LoginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(230)))), ((int)(((byte)(193)))));
@@ -401,29 +403,30 @@ namespace University_Management_System_2
             this.guna2PictureBox2.TabIndex = 3;
             this.guna2PictureBox2.TabStop = false;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 20;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // CloseBtn
             // 
+            this.CloseBtn.BorderRadius = 7;
             this.CloseBtn.CheckedState.Parent = this.CloseBtn;
             this.CloseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseBtn.CustomImages.Parent = this.CloseBtn;
             this.CloseBtn.FillColor = System.Drawing.SystemColors.Control;
-            this.CloseBtn.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.CloseBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(214)))), ((int)(((byte)(223)))));
             this.CloseBtn.HoverState.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.CloseBtn.HoverState.Parent = this.CloseBtn;
-            this.CloseBtn.Location = new System.Drawing.Point(410, 0);
+            this.CloseBtn.Location = new System.Drawing.Point(414, 5);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.ShadowDecoration.Parent = this.CloseBtn;
-            this.CloseBtn.Size = new System.Drawing.Size(40, 35);
-            this.CloseBtn.TabIndex = 0;
+            this.CloseBtn.Size = new System.Drawing.Size(30, 30);
+            this.CloseBtn.TabIndex = 87;
             this.CloseBtn.Text = "X";
-            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 30;
-            this.bunifuElipse1.TargetControl = this;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click_1);
             // 
             // Login
             // 
@@ -459,7 +462,6 @@ namespace University_Management_System_2
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Guna.UI2.WinForms.Guna2TileButton CloseBtn;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
@@ -474,5 +476,6 @@ namespace University_Management_System_2
         private System.Windows.Forms.Button ShowPassBtn;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
+        private Guna.UI2.WinForms.Guna2TileButton CloseBtn;
     }
 }

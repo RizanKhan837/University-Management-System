@@ -39,7 +39,7 @@ namespace University_Management_System_2
 
         private void Ok_Btn_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

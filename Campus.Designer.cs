@@ -433,7 +433,7 @@ namespace University_Management_System_2
             this.LogOut_Lbl.AutoSize = true;
             this.LogOut_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogOut_Lbl.Location = new System.Drawing.Point(100, 613);
+            this.LogOut_Lbl.Location = new System.Drawing.Point(100, 608);
             this.LogOut_Lbl.Name = "LogOut_Lbl";
             this.LogOut_Lbl.Size = new System.Drawing.Size(66, 21);
             this.LogOut_Lbl.TabIndex = 129;

@@ -62,7 +62,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@Rank", Dir_RankTb.Text);
                     cmd.Parameters.AddWithValue("@Date", Camp_DateDt.Value.Date);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Campus Added", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Campus Added");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -116,7 +117,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@Date", Camp_DateDt.Value.Date);
                     cmd.Parameters.AddWithValue("@CKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Course Updated...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Campus Updated");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -142,7 +144,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from CampusTbl where Camp_Id=@CKey", Connection);
                     cmd.Parameters.AddWithValue("@CKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Campus Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Campus Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }

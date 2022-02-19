@@ -71,7 +71,7 @@ namespace University_Management_System_2
             // Ok_Btn
             // 
             this.Ok_Btn.ActiveBorderThickness = 1;
-            this.Ok_Btn.ActiveCornerRadius = 30;
+            this.Ok_Btn.ActiveCornerRadius = 20;
             this.Ok_Btn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(180)))), ((int)(((byte)(63)))));
             this.Ok_Btn.ActiveForecolor = System.Drawing.Color.White;
             this.Ok_Btn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(180)))), ((int)(((byte)(63)))));
@@ -82,7 +82,7 @@ namespace University_Management_System_2
             this.Ok_Btn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ok_Btn.ForeColor = System.Drawing.Color.SeaGreen;
             this.Ok_Btn.IdleBorderThickness = 1;
-            this.Ok_Btn.IdleCornerRadius = 30;
+            this.Ok_Btn.IdleCornerRadius = 25;
             this.Ok_Btn.IdleFillColor = System.Drawing.Color.White;
             this.Ok_Btn.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.Ok_Btn.IdleLineColor = System.Drawing.Color.SeaGreen;
@@ -102,7 +102,7 @@ namespace University_Management_System_2
             this.DialogBox_Msg.CursorType = null;
             this.DialogBox_Msg.Font = new System.Drawing.Font("Lucida Sans", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DialogBox_Msg.ForeColor = System.Drawing.Color.Gray;
-            this.DialogBox_Msg.Location = new System.Drawing.Point(-16, 144);
+            this.DialogBox_Msg.Location = new System.Drawing.Point(-16, 141);
             this.DialogBox_Msg.Name = "DialogBox_Msg";
             this.DialogBox_Msg.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DialogBox_Msg.Size = new System.Drawing.Size(412, 37);

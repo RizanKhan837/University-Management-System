@@ -129,7 +129,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@FDept", F_DeptTb.Text);
                     cmd.Parameters.AddWithValue("@FSal", F_SalaryTb.Text);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Faculty Added", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Faculty Added");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -192,7 +193,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@FSal", F_SalaryTb.Text); ;
                     cmd.Parameters.AddWithValue("@FKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Faculty Updated...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Faculty Updated");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -218,7 +220,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from FacultyTbl where F_Id=@FKey", Connection);
                     cmd.Parameters.AddWithValue("@FKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Faculty Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Faculty Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }

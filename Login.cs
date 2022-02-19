@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,6 @@ namespace University_Management_System_2
             InitializeComponent();
         }
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive\University Management System 2\UniversityDataBase.mdf;Integrated Security=True");
-
-        private void CloseBtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void ShowPassBtn_MouseDown(object sender, MouseEventArgs e)
         {
@@ -71,6 +67,21 @@ namespace University_Management_System_2
             {
                 MessageBox.Show(ex.Message, "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://rizankhan.me");
+        }
+
+        private void MinimizeBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void CloseBtn_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

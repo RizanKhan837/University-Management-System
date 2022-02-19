@@ -117,7 +117,8 @@ namespace University_Management_System_2
                     cmd.Parameters.AddWithValue("@Dept", SalDeptTb.Text);
                     cmd.Parameters.AddWithValue("@Date", DateTime.Today.Date);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Salary Paid", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Salary Paid");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
@@ -143,7 +144,8 @@ namespace University_Management_System_2
                     SqlCommand cmd = new SqlCommand("Delete from SalaryTbl where Salary_Id=@SKey", Connection);
                     cmd.Parameters.AddWithValue("@SKey", Key);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Faculty Deleted...!!", "University Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogBox Db = new DialogBox("Record Deleted");
+                    Db.ShowDialog();
                     Connection.Close();
                     Display();
                 }
