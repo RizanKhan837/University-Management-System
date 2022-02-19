@@ -181,7 +181,7 @@ namespace University_Management_System_2
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Location = new System.Drawing.Point(101, 439);
+            this.panel3.Location = new System.Drawing.Point(103, 437);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(53, 3);
             this.panel3.TabIndex = 148;
@@ -252,7 +252,7 @@ namespace University_Management_System_2
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(36, 585);
+            this.pictureBox10.Location = new System.Drawing.Point(32, 585);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(56, 49);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -262,7 +262,7 @@ namespace University_Management_System_2
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(35, 518);
+            this.pictureBox9.Location = new System.Drawing.Point(32, 518);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(56, 49);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -272,7 +272,7 @@ namespace University_Management_System_2
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(35, 452);
+            this.pictureBox8.Location = new System.Drawing.Point(32, 452);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(56, 49);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -292,7 +292,7 @@ namespace University_Management_System_2
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(33, 324);
+            this.pictureBox7.Location = new System.Drawing.Point(33, 329);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -383,7 +383,7 @@ namespace University_Management_System_2
             this.LogOut_Lbl.AutoSize = true;
             this.LogOut_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogOut_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogOut_Lbl.Location = new System.Drawing.Point(100, 612);
+            this.LogOut_Lbl.Location = new System.Drawing.Point(98, 612);
             this.LogOut_Lbl.Name = "LogOut_Lbl";
             this.LogOut_Lbl.Size = new System.Drawing.Size(66, 21);
             this.LogOut_Lbl.TabIndex = 169;
@@ -395,7 +395,7 @@ namespace University_Management_System_2
             this.Camp_Lbl.AutoSize = true;
             this.Camp_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Camp_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Camp_Lbl.Location = new System.Drawing.Point(99, 545);
+            this.Camp_Lbl.Location = new System.Drawing.Point(97, 545);
             this.Camp_Lbl.Name = "Camp_Lbl";
             this.Camp_Lbl.Size = new System.Drawing.Size(75, 21);
             this.Camp_Lbl.TabIndex = 168;
@@ -407,7 +407,7 @@ namespace University_Management_System_2
             this.Sal_Lbl.AutoSize = true;
             this.Sal_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sal_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sal_Lbl.Location = new System.Drawing.Point(97, 479);
+            this.Sal_Lbl.Location = new System.Drawing.Point(99, 479);
             this.Sal_Lbl.Name = "Sal_Lbl";
             this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
             this.Sal_Lbl.TabIndex = 167;
@@ -418,7 +418,7 @@ namespace University_Management_System_2
             // 
             this.FeeLbl.AutoSize = true;
             this.FeeLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FeeLbl.Location = new System.Drawing.Point(97, 417);
+            this.FeeLbl.Location = new System.Drawing.Point(100, 415);
             this.FeeLbl.Name = "FeeLbl";
             this.FeeLbl.Size = new System.Drawing.Size(47, 21);
             this.FeeLbl.TabIndex = 166;
@@ -429,7 +429,7 @@ namespace University_Management_System_2
             this.Course_Lbl.AutoSize = true;
             this.Course_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Course_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course_Lbl.Location = new System.Drawing.Point(98, 351);
+            this.Course_Lbl.Location = new System.Drawing.Point(98, 356);
             this.Course_Lbl.Name = "Course_Lbl";
             this.Course_Lbl.Size = new System.Drawing.Size(74, 21);
             this.Course_Lbl.TabIndex = 165;

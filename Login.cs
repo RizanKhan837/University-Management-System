@@ -55,8 +55,11 @@ namespace University_Management_System_2
                     if (dt.Rows.Count == 1)
                     {
                         Home home = new Home();
+                        DialogBox Db = new DialogBox("Success");
+                        Db.ShowDialog();
                         this.Hide();
                         home.Show();
+
                     }
                     else
                     {

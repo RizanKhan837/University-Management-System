@@ -40,26 +40,26 @@ namespace University_Management_System_2
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ShowPassBtn = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.LoginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.UserNameTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -221,6 +221,42 @@ namespace University_Management_System_2
             this.bunifuPanel2.Size = new System.Drawing.Size(450, 530);
             this.bunifuPanel2.TabIndex = 1;
             // 
+            // PasswordTb
+            // 
+            this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTb.DefaultText = "";
+            this.PasswordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTb.DisabledState.Parent = this.PasswordTb;
+            this.PasswordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTb.FocusedState.Parent = this.PasswordTb;
+            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTb.HoverState.Parent = this.PasswordTb;
+            this.PasswordTb.Location = new System.Drawing.Point(49, 251);
+            this.PasswordTb.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '\0';
+            this.PasswordTb.PlaceholderText = "Password";
+            this.PasswordTb.SelectedText = "";
+            this.PasswordTb.ShadowDecoration.Parent = this.PasswordTb;
+            this.PasswordTb.Size = new System.Drawing.Size(398, 43);
+            this.PasswordTb.TabIndex = 4;
+            this.PasswordTb.UseSystemPasswordChar = true;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.Location = new System.Drawing.Point(6, 252);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(38, 42);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 3;
+            this.guna2PictureBox3.TabStop = false;
+            // 
             // ShowPassBtn
             // 
             this.ShowPassBtn.BackColor = System.Drawing.Color.Transparent;
@@ -296,6 +332,14 @@ namespace University_Management_System_2
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 247);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(450, 51);
+            this.guna2Panel1.TabIndex = 2;
+            // 
             // LoginBtn
             // 
             this.LoginBtn.CheckedState.Parent = this.LoginBtn;
@@ -337,6 +381,7 @@ namespace University_Management_System_2
             this.UserNameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UserNameTb.HoverState.Parent = this.UserNameTb;
             this.UserNameTb.Location = new System.Drawing.Point(49, 4);
+            this.UserNameTb.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UserNameTb.Name = "UserNameTb";
             this.UserNameTb.PasswordChar = '\0';
             this.UserNameTb.PlaceholderText = "User Name";
@@ -356,49 +401,6 @@ namespace University_Management_System_2
             this.guna2PictureBox2.TabIndex = 3;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 247);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(450, 51);
-            this.guna2Panel1.TabIndex = 2;
-            // 
-            // PasswordTb
-            // 
-            this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordTb.DefaultText = "";
-            this.PasswordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PasswordTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PasswordTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTb.DisabledState.Parent = this.PasswordTb;
-            this.PasswordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTb.FocusedState.Parent = this.PasswordTb;
-            this.PasswordTb.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTb.HoverState.Parent = this.PasswordTb;
-            this.PasswordTb.Location = new System.Drawing.Point(49, 251);
-            this.PasswordTb.Name = "PasswordTb";
-            this.PasswordTb.PasswordChar = '\0';
-            this.PasswordTb.PlaceholderText = "Password";
-            this.PasswordTb.SelectedText = "";
-            this.PasswordTb.ShadowDecoration.Parent = this.PasswordTb;
-            this.PasswordTb.Size = new System.Drawing.Size(398, 43);
-            this.PasswordTb.TabIndex = 4;
-            this.PasswordTb.UseSystemPasswordChar = true;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.Location = new System.Drawing.Point(6, 252);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(38, 42);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 3;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // CloseBtn
             // 
             this.CloseBtn.CheckedState.Parent = this.CloseBtn;
@@ -413,7 +415,7 @@ namespace University_Management_System_2
             this.CloseBtn.Location = new System.Drawing.Point(410, 0);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.ShadowDecoration.Parent = this.CloseBtn;
-            this.CloseBtn.Size = new System.Drawing.Size(40, 40);
+            this.CloseBtn.Size = new System.Drawing.Size(40, 35);
             this.CloseBtn.TabIndex = 0;
             this.CloseBtn.Text = "X";
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
@@ -440,9 +442,9 @@ namespace University_Management_System_2
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

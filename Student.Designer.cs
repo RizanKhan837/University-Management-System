@@ -428,7 +428,7 @@ namespace University_Management_System_2
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(33, 324);
+            this.pictureBox7.Location = new System.Drawing.Point(33, 328);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -641,7 +641,7 @@ namespace University_Management_System_2
             this.Course_Lbl.AutoSize = true;
             this.Course_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Course_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course_Lbl.Location = new System.Drawing.Point(98, 352);
+            this.Course_Lbl.Location = new System.Drawing.Point(98, 356);
             this.Course_Lbl.Name = "Course_Lbl";
             this.Course_Lbl.Size = new System.Drawing.Size(74, 21);
             this.Course_Lbl.TabIndex = 79;
@@ -653,7 +653,7 @@ namespace University_Management_System_2
             this.FeeLbl.AutoSize = true;
             this.FeeLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FeeLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FeeLbl.Location = new System.Drawing.Point(97, 418);
+            this.FeeLbl.Location = new System.Drawing.Point(100, 415);
             this.FeeLbl.Name = "FeeLbl";
             this.FeeLbl.Size = new System.Drawing.Size(47, 21);
             this.FeeLbl.TabIndex = 80;

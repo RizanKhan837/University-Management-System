@@ -131,7 +131,7 @@ namespace University_Management_System_2
             this.Camp_Lbl.AutoSize = true;
             this.Camp_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Camp_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Camp_Lbl.Location = new System.Drawing.Point(92, 546);
+            this.Camp_Lbl.Location = new System.Drawing.Point(93, 546);
             this.Camp_Lbl.Name = "Camp_Lbl";
             this.Camp_Lbl.Size = new System.Drawing.Size(75, 21);
             this.Camp_Lbl.TabIndex = 24;
@@ -143,7 +143,7 @@ namespace University_Management_System_2
             this.Sal_Lbl.AutoSize = true;
             this.Sal_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sal_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sal_Lbl.Location = new System.Drawing.Point(90, 480);
+            this.Sal_Lbl.Location = new System.Drawing.Point(95, 480);
             this.Sal_Lbl.Name = "Sal_Lbl";
             this.Sal_Lbl.Size = new System.Drawing.Size(60, 21);
             this.Sal_Lbl.TabIndex = 23;
@@ -155,7 +155,7 @@ namespace University_Management_System_2
             this.FeeLbl.AutoSize = true;
             this.FeeLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FeeLbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FeeLbl.Location = new System.Drawing.Point(90, 418);
+            this.FeeLbl.Location = new System.Drawing.Point(95, 416);
             this.FeeLbl.Name = "FeeLbl";
             this.FeeLbl.Size = new System.Drawing.Size(47, 21);
             this.FeeLbl.TabIndex = 22;
@@ -167,7 +167,7 @@ namespace University_Management_System_2
             this.Course_Lbl.AutoSize = true;
             this.Course_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Course_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course_Lbl.Location = new System.Drawing.Point(91, 352);
+            this.Course_Lbl.Location = new System.Drawing.Point(92, 355);
             this.Course_Lbl.Name = "Course_Lbl";
             this.Course_Lbl.Size = new System.Drawing.Size(74, 21);
             this.Course_Lbl.TabIndex = 21;
@@ -179,7 +179,7 @@ namespace University_Management_System_2
             this.Fac_Lbl.AutoSize = true;
             this.Fac_Lbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Fac_Lbl.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fac_Lbl.Location = new System.Drawing.Point(91, 297);
+            this.Fac_Lbl.Location = new System.Drawing.Point(91, 298);
             this.Fac_Lbl.Name = "Fac_Lbl";
             this.Fac_Lbl.Size = new System.Drawing.Size(70, 21);
             this.Fac_Lbl.TabIndex = 20;
@@ -264,7 +264,7 @@ namespace University_Management_System_2
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(27, 324);
+            this.pictureBox7.Location = new System.Drawing.Point(27, 328);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

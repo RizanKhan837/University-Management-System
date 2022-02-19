@@ -76,6 +76,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
       <HintPath>..\..\Downloads\Bunifu_UI_WinForms_5.0.3_Downloadly.ir\Bunifu UI WinForms 5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\Downloads\Bunifu_UI_WinForms_5.0.3_Downloadly.ir\Bunifu UI WinForms 5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\Downloads\Guna Framework UI Lastest Version + Cracked\Guna_UI_Framework_Ultimate_2.0.0.1_Downloadly.ir\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -112,6 +115,12 @@
     </Compile>
     <Compile Include="Department.Designer.cs">
       <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox.Designer.cs">
+      <DependentUpon>DialogBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Faculty.cs">
       <SubType>Form</SubType>
@@ -159,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Department.resx">
       <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox.resx">
+      <DependentUpon>DialogBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Faculty.resx">
       <DependentUpon>Faculty.cs</DependentUpon>
