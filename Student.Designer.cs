@@ -81,6 +81,7 @@ namespace University_Management_System_2
             this.Camp_Lbl = new System.Windows.Forms.Label();
             this.LogOut_Lbl = new System.Windows.Forms.Label();
             this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.StDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -716,6 +717,10 @@ namespace University_Management_System_2
             this.MinimizeBtn.Text = "--";
             this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this;
+            // 
             // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -837,5 +842,6 @@ namespace University_Management_System_2
         private System.Windows.Forms.Label Home_Lbl;
         private Guna.UI2.WinForms.Guna2TileButton MinimizeBtn;
         private Guna.UI2.WinForms.Guna2TileButton CloseBtn;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

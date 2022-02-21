@@ -20,15 +20,6 @@ namespace University_Management_System_2
         }
         SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\OneDrive\University Management System 2\UniversityDataBase.mdf;Integrated Security=True");
 
-        private void ShowPassBtn_MouseDown(object sender, MouseEventArgs e)
-        {
-            PasswordTb.UseSystemPasswordChar = false;
-        }
-
-        private void ShowPassBtn_MouseUp(object sender, MouseEventArgs e)
-        {
-            PasswordTb.UseSystemPasswordChar = true;
-        }
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
@@ -82,6 +73,44 @@ namespace University_Management_System_2
         private void CloseBtn_Click_1(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+        private void ShowPass_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (ShowPass.Checked)
+            {
+                PasswordTb.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PasswordTb.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void PasswordTb_TextChanged(object sender, EventArgs e)
+        {
+            PasswordTb.UseSystemPasswordChar = true;
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"https://www.facebook.com/rizankhan837");
+        }
+
+        private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"https://www.linkedin.com/in/rizwanakram837/");
+        }
+
+        private void guna2CirclePictureBox3_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"https://github.com/RizanKhan837");
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Signup Sign = new Signup();
+            this.Hide();
+            Sign.Show();
         }
     }
 }

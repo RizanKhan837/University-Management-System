@@ -74,6 +74,7 @@ namespace University_Management_System_2
             this.SemesterCb = new System.Windows.Forms.ComboBox();
             this.MinimizeBtn = new Guna.UI2.WinForms.Guna2TileButton();
             this.CloseBtn = new Guna.UI2.WinForms.Guna2TileButton();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -612,6 +613,10 @@ namespace University_Management_System_2
             this.CloseBtn.Text = "X";
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this;
+            // 
             // Fees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -719,5 +724,6 @@ namespace University_Management_System_2
         private System.Windows.Forms.ComboBox SemesterCb;
         private Guna.UI2.WinForms.Guna2TileButton MinimizeBtn;
         private Guna.UI2.WinForms.Guna2TileButton CloseBtn;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

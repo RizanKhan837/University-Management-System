@@ -32,4 +32,8 @@ C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Managem
 C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.DialogBox.resources
 C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University_Management_System_2.Signup.resources
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\HP\OneDrive\University Management System 2\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
 C:\Users\HP\OneDrive\University Management System 2\obj\Debug\University Management System 2.csproj.AssemblyReference.cache
